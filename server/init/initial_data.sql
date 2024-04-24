@@ -498,5 +498,5 @@ CREATE TABLE `menu_permissions`  (
 SET FOREIGN_KEY_CHECKS = 1;
 
 -- USE MySQL
--- grant all privileges on *.* to 'root'@'%' identified by '12345678' with grant option;
+-- grant all privileges on *.* to 'root'@'%' identified by '7405' with grant option;
 -- flush privileges;

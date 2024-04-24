@@ -4,7 +4,7 @@ services:
     container_name: xanadu-db
     environment:
       - TZ=Asia/Shanghai
-      - MYSQL_ROOT_PASSWORD=12345678
+      - MYSQL_ROOT_PASSWORD=7405
       - MYSQL_DATABASE=Xanadu
     restart: always
     # 初始命令

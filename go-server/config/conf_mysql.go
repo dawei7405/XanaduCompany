@@ -25,7 +25,7 @@ func (t *MySQL) init() {
 	t.Config = ""
 	t.DB = "blog"
 	t.User = "root"
-	t.Password = "123456"
+	t.Password = "7405"
 	t.LogLevel = "debug"
 }
 
