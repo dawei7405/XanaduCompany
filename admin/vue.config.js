@@ -6,7 +6,7 @@ function resolve(dir) {
   return path.join(__dirname, dir)
 }
 
-const name = defaultSettings.title || 'Xanadu' // page title
+const name = defaultSettings.title || 'bingjikeji' // page title
 
 // 如果端口设置为80，
 // 使用管理员权限执行命令行。

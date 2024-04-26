@@ -1,4 +1,4 @@
-# Xanadu-admin
+# bingjikeji-admin
 
 ## 安装依赖
 ```

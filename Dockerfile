@@ -14,6 +14,9 @@ RUN npm config set registry http://registry.npm.taobao.org \
 COPY ./admin /app/admin
 COPY ./web /app/web
 
+RUN cd /app/admin/node_modules/.bin && chmod 777 vue-cli-service
+RUN cd /app/web/node_modules/.bin && chmod 777 vue-cli-service
+
 RUN cd /app/admin && npm run build:prod \
   && cd /app/web && npm run build
 

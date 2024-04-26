@@ -284,7 +284,7 @@ export const asyncRoutes = [
       {
         path: 'http://localhost:8080/',
         meta: {
-          title: 'Xanadu',
+          title: 'bingjikeji',
           icon: 'link'
         }
       }

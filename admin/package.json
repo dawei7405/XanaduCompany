@@ -1,7 +1,7 @@
 {
-  "name": "xanadu-admin",
+  "name": "bingjikeji-admin",
   "version": "1.0.0",
-  "description": "xanadu-admin",
+  "description": "bingjikeji-admin",
   "author": "aerowang",
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -12,7 +12,7 @@
     "lint": "eslint --ext .js,.vue src",
     "test:unit": "jest --clearCache && vue-cli-service test:unit",
     "test:ci": "npm run lint && npm run test:unit",
-    "clear":"npx rimraf node_modules"
+    "clear": "npx rimraf node_modules"
   },
   "dependencies": {
     "axios": "0.18.1",
@@ -26,6 +26,7 @@
     "nprogress": "0.2.0",
     "path-to-regexp": "2.4.0",
     "screenfull": "4.2.0",
+    "serve": "^14.2.3",
     "vue": "2.6.10",
     "vue-i18n": "7.3.2",
     "vue-router": "3.0.6",

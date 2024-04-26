@@ -5,7 +5,7 @@
  Source Server Type    : MySQL
  Source Server Version : 50707
  Source Host           : localhost:3308
- Source Schema         : xanadu_db
+ Source Schema         : bingjikeji_db
 
  Target Server Type    : MySQL
  Target Server Version : 50707
@@ -14,8 +14,8 @@
  Date: 01/07/2021 09:49:46
 */
 USE mysql;
-CREATE DATABASE IF NOT EXISTS Xanadu DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-USE `Xanadu`;
+CREATE DATABASE IF NOT EXISTS bingjikeji DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+USE `bingjikeji`;
 SET NAMES utf8mb4;
 SET FOREIGN_KEY_CHECKS = 0;
 -- ----------------------------

@@ -1,6 +1,6 @@
 import defaultSettings from '@/settings'
 
-const title = defaultSettings.title || 'Xanadu'
+const title = defaultSettings.title || 'bingjikeji'
 
 export default function getPageTitle(pageTitle) {
   if (pageTitle) {

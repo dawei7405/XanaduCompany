@@ -1,5 +1,5 @@
 module.exports = {
-  title: 'Xanadu',
+  title: 'bingjikeji',
 
   /**
    * @type {boolean} true | false
