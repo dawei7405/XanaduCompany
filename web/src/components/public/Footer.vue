@@ -1,137 +1,133 @@
 <template>
-    <div class="footer_container" :style="footerHeight + 'px'">
-        <div class="footer_content">
-            <div class="footer_logo footer-content-column">
-                <div class="logo-container">
-                    <img :src="logo_url" alt="">
-                    <div class="logo-text">
-                        <p class="text1">Xanadu</p>
-                        <p class="text2">INTERNET COMPANY</p>
-                    </div>
-                </div>
-                <h2>© 2020-2021 Xanadu&nbsp;科技有限公司</h2>
-                <h2>X公网安备 xxxxxxxxxxxxxx号 I ICP备xxxxxxxx号-1</h2>
-            </div>
-            <div class="about_us footer-content-column">
-                <h2>关于我们</h2>
-                <ul class="about_list">
-                    <li>
-                        <router-link to="/job" target="_blank">企业文化</router-link>
-                    </li>
-                </ul>
-            </div>
-            <div class="contact_us footer-content-column">
-                <h2>联系我们</h2>
-                <ul class="contact_list">
-                    <li v-for="(item, index) in contact_way" :key="index">
-                        <a :href="'mailto:' + item.email">{{ item.name }}</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="focus_us footer-content-column">
-                <h2>实时动态与招聘信息，扫码关注我们</h2>
-                <div class="media">
-                    <div :class="item.name" v-for="(item, index) in focus_icon" :key="index">
-                        <el-popover placement="top" trigger="hover">
-                          <template #reference>
-                              <div class="qr_popover">
-                                <img :src="item.qr" alt="">
-                                <h2>{{ item.info }}</h2>
-                              </div>
-                          </template>
-                          <img :src="item.path" :alt="item.name">
-                        </el-popover>
-                    </div>
-                </div>
-            </div>
+  <div class="footer_container" :style="footerHeight + 'px'">
+    <div class="footer_content">
+      <div class="footer_logo footer-content-column">
+        <div class="logo-container">
+          <img :src="logo_url" alt="">
+          <!--                    <div class="logo-text">-->
+          <!--                        <p class="text1">Xanadu</p>-->
+          <!--                        <p class="text2">INTERNET COMPANY</p>-->
+          <!--                    </div>-->
         </div>
+        <h2>四川并济科技有限公司</h2>
+        <h2>地址：四川省内江市东兴区川南电商中心A座</h2>
+        <h2>邮编: 641000</h2>
+        <h2>传真: 0832-5350555</h2>
+      </div>
+      <div class="contact_us footer-content-column">
+        <h2>联系我们</h2>
+        <ul class="contact_list">
+          <li v-for="(item, index) in contact_way" :key="index">
+            <a :href="'mailto:' + item.email">{{ item.name }}</a>
+          </li>
+        </ul>
+      </div>
+      <div class="focus_us footer-content-column">
+        <h2 style="text-align: center">实时动态与招聘信息，扫码关注我们</h2>
+        <div class="media">
+          <div :class="item.name" v-for="(item, index) in focus_icon" :key="index">
+            <el-popover placement="top" trigger="hover">
+              <template #reference>
+                <div class="qr_popover">
+                  <img :src="item.qr" alt="">
+                  <h2>{{ item.info }}</h2>
+                </div>
+              </template>
+              <img :src="item.path" :alt="item.name">
+            </el-popover>
+          </div>
+        </div>
+      </div>
+
     </div>
+  </div>
 </template>
 <script lang="ts" setup>
-import { onMounted, ref } from 'vue'
+  import {onMounted, ref} from 'vue'
 
-type ConcatItem = {
+  type ConcatItem = {
     name: string;
     email: string;
-}
+  }
 
-type FocusItem = {
+  type FocusItem = {
     name: string;
     path: NodeRequire;
     qr: NodeRequire;
     info: string;
-}
+  }
 
-const footerHeight = ref('')
-const curWidth = ref('')
-const logo_url = ref<any>()
-logo_url.value = require('../../assets/img/index/logoColor.png')
-const contact_way = ref<ConcatItem[]>([])
-const focus_icon = ref<FocusItem[]>([])
+  const footerHeight = ref('')
+  const curWidth = ref('')
+  const logo_url = ref<any>()
+  // logo_url.value = require('../../assets/img/index/logoColor.png')
+  logo_url.value = require('../../assets/img/index/logo.png')
+  const contact_way = ref<ConcatItem[]>([])
+  const focus_icon = ref<FocusItem[]>([])
 
-onMounted(() => {
-  contact_way.value =
+  onMounted(() => {
+      contact_way.value =
         [
           {
             name: '媒体问询',
-            email: 'aerowangue@126.com'
+            email: 'master@scmerge.com'
           },
           {
             name: '招聘相关',
-            email: 'aerowangue@126.com'
+            email: 'master@scmerge.com'
           },
           {
             name: '商务合作',
-            email: 'aerowangue@126.com'
+            email: 'master@scmerge.com'
           },
           {
             name: '广告相关',
-            email: 'aerowangue@126.com'
+            email: 'master@scmerge.com'
 
           }]
-  focus_icon.value =
+      focus_icon.value =
         [
-          {
-            name: 'weibo',
-            path: require('../../assets/img/focus/weibo.png'),
-            qr: require('../../assets/img/focus/qr_weibo.png'),
-            info: '关注官方微博'
-          },
+          // {
+          //   name: 'weibo',
+          //   path: require('../../assets/img/focus/weibo.png'),
+          //   qr: require('../../assets/img/focus/qr_weibo.png'),
+          //   info: '关注官方微博'
+          // },
           {
             name: 'weixin',
-            path: require('../../assets/img/focus/weixin.svg'),
+            path: require('../../assets/img/focus/qr_weixin.png'),
             qr: require('../../assets/img/focus/qr_weixin.png'),
             info: '关注官方微信公众号'
           },
-          {
-            name: 'bilibili',
-            path: require('../../assets/img/focus/bilibili.png'),
-            qr: require('../../assets/img/focus/qr_bilibili.png'),
-            info: '关注官方 bilibili 号'
-          }
+          // {
+          //   name: 'bilibili',
+          //   path: require('../../assets/img/focus/bilibili.png'),
+          //   qr: require('../../assets/img/focus/qr_bilibili.png'),
+          //   info: '关注官方 bilibili 号'
+          // }
         ]
-}
-)
+    }
+  )
 </script>
 <style lang="less" scoped>
-* {
+  * {
     margin: 0;
     padding: 0;
-}
+  }
 
-h2 {
+  h2 {
     font-size: 100%;
     font-weight: 400;
     font-variant: normal;
-}
+  }
 
-.footer_container {
+  .footer_container {
     width: 100%;
     background: #1f2329;
     padding-bottom: 60px;
-}
+  }
 
-.footer_content {
+  .footer_content {
     max-width: 1440px;
     color: #fff;
     margin: 0 auto;
@@ -141,152 +137,154 @@ h2 {
     align-items: flex-start;
 
     h2 {
-        font-size: 14px;
-        line-height: 22px;
-        margin: 4px 0;
-        color: #7b7e81;
+      font-size: 14px;
+      line-height: 22px;
+      margin: 4px 0;
+      color: #7b7e81;
     }
 
     .footer-content-column {
-        flex: 1 1;
-        color: #d2d3d4;
-        position: relative;
+      flex: 1 1;
+      color: #d2d3d4;
+      position: relative;
+      text-align: center;
+
+      h2 {
+        margin-bottom: 18px;
+        font-size: 16px;
+        font-weight: bold;
+
+      }
+
+      .about_list,
+      .contact_list {
         text-align: center;
+        font-size: 14px;
+        line-height: 22px;
 
-        h2 {
-            margin-bottom: 18px;
-            font-size: 16px;
-            font-weight: bold;
+        li {
+          margin-bottom: 15px;
         }
 
-        .about_list,
-        .contact_list {
-            text-align: center;
-            font-size: 14px;
-            line-height: 22px;
-
-            li {
-                margin-bottom: 15px;
-            }
-
-            a {
-                color: #d2d3d4;
-            }
+        a {
+          color: #d2d3d4;
         }
+      }
     }
 
     .about_us {
-        max-width: 202px;
+      max-width: 202px;
     }
 
     .contact_us {
-        max-width: 202px;
+      max-width: 202px;
     }
 
     .focus_us {
+      text-align: left;
+      padding-left: 10px;
+
+      .media {
+        margin-top: 18px;
+        display: flex;
+        justify-content: space-evenly;
+      }
+
+      span {
+        margin-right: 18px;
+        flex: 0 0 auto;
+      }
+
+      h2 {
         text-align: left;
-        padding-left: 10px;
-
-        .media {
-            margin-top: 18px;
-            display: flex;
-            justify-content: space-evenly;
-        }
-
-        span {
-            margin-right: 18px;
-            flex: 0 0 auto;
-        }
-
-        h2 {
-            text-align: left;
-            font-size: 14px;
-            font-weight: normal;
-            margin-bottom: 4px;
-        }
+        font-size: 14px;
+        font-weight: normal;
+        margin-bottom: 4px;
+      }
     }
 
     .footer_logo {
-        margin-left: 96px;
-        height: 55px;
-        text-align: left;
-        max-width: 382px;
-        min-width: 350px;
+      margin-left: 96px;
+      height: 55px;
+      text-align: left;
+      max-width: 382px;
+      min-width: 350px;
+
+      h2 {
+        font-size: 14px;
+        font-weight: normal;
+        margin-bottom: 4px;
+      }
+
+      .logo-container {
+        display: flex;
+        margin-bottom: 9px;
+
+        img {
+          height: 50px;
+        }
+
+        .logo-text {
+          margin-left: 15px;
+          position: relative;
+          bottom: -6px;
+        }
+
+        .text1 {
+          font-size: 21px;
+          font-weight: bold;
+          margin: 0;
+        }
+
+        .text2 {
+          font-size: 12px;
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 991px) {
+    .footer_content {
+      flex-direction: column;
+
+      .footer-content-column {
+        text-align: center;
+        margin: 0 auto 0;
 
         h2 {
-            font-size: 14px;
-            font-weight: normal;
-            margin-bottom: 4px;
+          text-align: center;
         }
 
-        .logo-container {
-            display: flex;
-            margin-bottom: 9px;
+        padding-left: 0;
+      }
 
-            img {
-                height: 50px;
-            }
+      .focus_us div:last-of-type > span {
+        margin-right: 0;
+      }
 
-            .logo-text {
-                margin-left: 15px;
-                position: relative;
-                bottom: -6px;
-            }
+      .media {
+        justify-content: center;
+      }
 
-            .text1 {
-                font-size: 21px;
-                font-weight: bold;
-                margin: 0;
-            }
-
-            .text2 {
-                font-size: 12px;
-                margin: 0;
-            }
-        }
+      .logo-container {
+        justify-content: center;
+        text-align: left;
+      }
     }
-}
+  }
 
-@media only screen and (max-width: 991px) {
-    .footer_content {
-        flex-direction: column;
-
-        .footer-content-column {
-            text-align: center;
-            margin: 0 auto 0;
-
-            h2 {
-                text-align: center;
-            }
-
-            padding-left: 0;
-        }
-
-        .focus_us div:last-of-type>span {
-            margin-right: 0;
-        }
-
-        .media {
-            justify-content: center;
-        }
-
-        .logo-container {
-            justify-content: center;
-            text-align: left;
-        }
-    }
-}
-
-.qr_popover {
-  //  width: 130px;
-  //height: 130px;
+  .qr_popover {
+    //  width: 130px;
+    //height: 130px;
     text-align: center;
 
     img {
-        width: 80px;
-        height: 80px;
-        margin-bottom: 10px;
+      width: 80px;
+      height: 80px;
+      margin-bottom: 10px;
     }
-  //margin-left: 30px;
-}
+
+    //margin-left: 30px;
+  }
 </style>

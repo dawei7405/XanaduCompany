@@ -46,7 +46,8 @@ logo_img.value = [{
   path: require('../../assets/img/index/logo.png')
 },
 {
-  path: require('../../assets/img/index/logoColor.png')
+  // path: require('../../assets/img/index/logoColor.png')
+  path: require('../../assets/img/index/logo.png')
 }
 ]
 onBeforeMount(() => {
@@ -54,6 +55,10 @@ onBeforeMount(() => {
     {
       title: '首页',
       path: '/index'
+    },
+    {
+      title: '关于并济',
+      path: '/aboutUs'
     },
     {
       title: '新闻中心',

@@ -2,7 +2,7 @@
   <div class="banner">
     <div class="Limit">
       <el-carousel :interval="2000" arrow="hover" :height="bannerHeight + 'px'" :autoplay="true" ref="carousel"
-        trigger="click" indicator-position="none">
+                   trigger="click" indicator-position="none">
         <el-carousel-item v-for="item in imgList" :key="item.id">
           <div class="img_con">
             <div class="img_cover"></div>
@@ -33,23 +33,36 @@ onBeforeMount(() => {
   imgList.value = [
     {
       id: 0,
-      imgUrl: 'https://cdn.jsdelivr.net/gh/xanaduwang/aerowang/img/20210604161353.jpg'
+      imgUrl: require('../assets/img/roll/1.png')
     },
     {
       id: 1,
-      imgUrl: 'https://cdn.jsdelivr.net/gh/xanaduwang/aerowang/img/20210604161737.jpg'
+      imgUrl: require('../assets/img/roll/2.jpg')
     },
     {
       id: 2,
-      imgUrl: 'https://cdn.jsdelivr.net/gh/xanaduwang/aerowang/img/20210604161757.png'
-    },
-    {
-      id: 3,
-      imgUrl: 'https://cdn.jsdelivr.net/gh/xanaduwang/aerowang/img/20210604161818.jpg'
-    }, {
-      id: 4,
-      imgUrl: 'https://cdn.jsdelivr.net/gh/xanaduwang/aerowang/img/20210604161834.jpg'
+      imgUrl: require('../assets/img/roll/6.jpg')
     }
+
+    // {
+    //   id: 0,
+    //   imgUrl: 'https://cdn.jsdelivr.net/gh/xanaduwang/aerowang/img/20210604161353.jpg'
+    // },
+    // {
+    //   id: 1,
+    //   imgUrl: 'https://cdn.jsdelivr.net/gh/xanaduwang/aerowang/img/20210604161737.jpg'
+    // },
+    // {
+    //   id: 2,
+    //   imgUrl: 'https://cdn.jsdelivr.net/gh/xanaduwang/aerowang/img/20210604161757.png'
+    // },
+    // {
+    //   id: 3,
+    //   imgUrl: 'https://cdn.jsdelivr.net/gh/xanaduwang/aerowang/img/20210604161818.jpg'
+    // }, {
+    //   id: 4,
+    //   imgUrl: 'https://cdn.jsdelivr.net/gh/xanaduwang/aerowang/img/20210604161834.jpg'
+    // }
   ]
 })
 </script>

@@ -3,10 +3,10 @@
     <div class="content-blok service-block">
       <div class="servie-block">
         <div class="block-line"></div>
-        <p class="service-info-title">业务范围</p>
-        <p class="service-info-subtitle">
-          四川并济科技有限公司自2020年起专注于AI算力服务，拥有国内最大的商业化A100私有云算力服务体系，并涵盖A100、A800、H800多品类的算力服务，为下游客户提供高效智能算力服务。2023年11月21日，并济科技现有股东与NVIDIA
-          Elite Partner(英伟达精英级合作伙伴）上海信弘智能科技有限公司签署增资扩股协议，获得过亿元战略投资。</p>
+        <p class="service-info-title">关于并济</p>
+        <p class="service-info-subtitle"> 四川并济科技有限公司成立于2020年07月，注册资本为 10000 万元人民币，系四川弘智远大控股子公司及内江市东兴区招商引资企业，已被认定为国家高新技术企业、四川省专精特新中小企业、内江市企业技术中心等，公司致力于人工智能算力中心建设及服务，多类型业务应用兼顾。</p>
+         <p class="service-info-subtitle"> 四川并济科技有限公司自2020年起专注于AI算力服务，拥有国内最大的商业化A100私有云算力服务体系，并涵盖A100、A800、H800多品类的算力服务，为下游客户提供高效智能算力服务。2023年11月21日，并济科技现有股东与NVIDIA Elite Partner(英伟达精英级合作伙伴）上海信弘智能科技有限公司签署增资扩股协议，获得过亿元战略投资。</p>
+        <p class="service-info-subtitle"> 公司已通过相关行业的权威认证，专注产品的自主研发，已获多项专利证书，资质卓越。公司拥有过渡数据中心和智能超算中心，建设规模宏大，服务能力强，公司还会继续不断扩大自身知识产权储备，在人工智能、区块链、云计算、大数据领域内不断更新换代，致力于通过技术创新、数据赋能和应用场景的深度融合，为政府、企业、市民以及地方产业等提供高效、节约、品质的综合服务平台。</p>
         <div class="service-list">
           <div class="service-title" v-for="(item, index) in serviceList" :key="index">
             <div class="is-hover-shadow">
@@ -177,9 +177,11 @@
       line-height: 1.5;
       color: #646a73;
       margin-top: 30px;
-      margin-left: 150px;
-      margin-right: 150px;
+      margin-left: 100px;
+      margin-right: 100px;
       text-align: left !important;
+      text-indent: 2em;
+      padding-left:2em
     }
 
     .service-list {

@@ -2,8 +2,8 @@
     <div class="overlay">
         <div class="overlay-content">
             <div class="slogan sofiaBold">
-                <div class="slogan-title">互联网+时代</div>
-                <div class="slogan-subtitle">BELIEVE IN YOURSELF</div>
+                <div class="slogan-title">专注于AI智能算力服务</div>
+                <div class="slogan-subtitle">为客户提供专业高效服务，满足客户的每个特定需求</div>
             </div>
         </div>
     </div>

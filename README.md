@@ -26,7 +26,7 @@ vue3为主分支，vue2版本请参考[vue2](https://github.com/AeroWang/XanaduC
 2. 数据库：MySQL（v5.7.7）
 3. Web服务器：Nginx 
 4. 开发工具：Webstorm
-5. 系统基础环境：Node.js
+5. 系统基础环境：Node.js (v16)
 6. 浏览器：谷歌浏览器
 
 ## 三、目录说明

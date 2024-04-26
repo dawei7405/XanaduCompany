@@ -12,6 +12,11 @@ const routes: Array<RouteRecordRaw> = [
     component: Index
   },
   {
+    path: '/aboutUs',
+    name: 'AboutUs',
+    component: () => import('@/views/aboutUs.vue')
+  },
+  {
     path: '/news',
     name: 'News',
     component: () => import('@/views/News.vue')

@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "SET NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service serve",
-    "serve": "SET NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service serve  --mode development",
+    "serve": "vue-cli-service serve  --mode development",
     "build": "vue-cli-service build --mode production",
     "lint": "vue-cli-service lint",
     "clear": "npx rimraf node_modules"
