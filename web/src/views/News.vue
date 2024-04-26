@@ -4,7 +4,7 @@
     <div class="box">
       <div class="news-banner">
         <div class="banner-title">
-          <h2>新视野</h2>
+          <h2>新闻动态</h2>
           <h3>了解更多新闻</h3>
         </div>
         <el-autocomplete

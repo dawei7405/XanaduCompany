@@ -1,12 +1,14 @@
 services:
   db:
     image: mysql:5.7
-    container_name: xanadu-db
+    container_name: bingjikeji-db
     environment:
       - TZ=Asia/Shanghai
       - MYSQL_ROOT_PASSWORD=7405
       - MYSQL_DATABASE=Xanadu
     restart: always
+    ports:
+      - 3307:3306
     # 初始命令
     command:
       --character-set-server=utf8mb4
@@ -17,7 +19,9 @@ services:
       - ./server/init:/docker-entrypoint-initdb.d/
 
   backend:
-    container_name: xanadu-server
+    container_name: bingjikeji-server
+    environment:
+      - TZ=Asia/Shanghai
     build:
       context: ./server
     depends_on:
@@ -27,7 +31,9 @@ services:
     restart: always
 
   frontend:
-    container_name: xanadu-frontend
+    container_name: bingjikeji-frontend
+    environment:
+      - TZ=Asia/Shanghai
     build:
       context: .
     depends_on:

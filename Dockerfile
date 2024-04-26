@@ -7,7 +7,7 @@ COPY ./admin/package-lock.json /app/admin/package-lock.json
 COPY ./web/package.json /app/web/package.json
 COPY ./web/package-lock.json /app/web/package-lock.json
 
-RUN npm config set registry https://registry.npmmirror.com \
+RUN npm config set registry http://registry.npm.taobao.org \
   && cd /app/admin && npm install \
   && cd /app/web && npm install
 
