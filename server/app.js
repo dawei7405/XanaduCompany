@@ -23,7 +23,7 @@ const routers = require('./routers/index')
 const {isValidImage} = require("./utils/utils");
 const {uploadFile} = require("./utils/manageImageWithQiniu");
 
-// 常量
+// 后端服务端口
 const Port = process.env.PORT || 3000
 const staticPath = './static'
 

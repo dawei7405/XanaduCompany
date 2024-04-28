@@ -93,6 +93,7 @@ docker 一键自动部署
 
 ```bash
 把项目上传到服务器后到根目录下执行
+关闭防火墙
 # 主目录下
 docker compose up -d
 
