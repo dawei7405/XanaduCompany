@@ -1,6 +1,4 @@
 #!/bin/bash
 
-START_CMD="bin/start-solo.sh"
-exec $START_CMD &
-
+pm2 start .
 tail -f /dev/null
