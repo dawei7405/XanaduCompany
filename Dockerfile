@@ -1,4 +1,4 @@
-FROM node:16 as build
+FROM node:16.20 as build
 
 WORKDIR /app
 
@@ -7,7 +7,7 @@ COPY ./admin/package-lock.json /app/admin/package-lock.json
 COPY ./web/package.json /app/web/package.json
 COPY ./web/package-lock.json /app/web/package-lock.json
 
-RUN npm config set registry https://registry.npm.taobao.org \
+RUN npm config set registry https://registry.npm.taobao.org && npm config set strict-ssl false\
   && cd /app/admin && npm install \
   && cd /app/web && npm install
 
