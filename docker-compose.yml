@@ -1,15 +1,15 @@
+version:  '3'
 services:
   #数据库
-  db:
+  webdb:
     image: mysql:5.7
-    container_name: bingjikeji-db
     environment:
       - TZ=Asia/Shanghai
       - MYSQL_ROOT_PASSWORD=7405
       - MYSQL_DATABASE=bingjikeji
     restart: always
     ports:
-      - 3307:3306
+      - 3306:3306
     # 初始命令
     command:
       --character-set-server=utf8mb4
@@ -18,29 +18,42 @@ services:
     volumes:
       - /data/mysql/data:/var/lib/mysql
       - ./server/init:/docker-entrypoint-initdb.d/
+    networks:
+      - front-tier
+      - back-tier
 
   #后端服务
-  server:
-    container_name: bingjikeji-server
+  webserver:
     environment:
       - TZ=Asia/Shanghai
     build:
       context: ./server
     depends_on:
-      - db
+      - webdb
     ports:
       - 3000:3000
+    networks:
+      - front-tier
+      - back-tier
     restart: always
 
   #前端服务
-  front:
-    container_name: bingjikeji-front
+  webfront:
     environment:
       - TZ=Asia/Shanghai
     build:
       context: .
     depends_on:
-      - server
+      - webserver
     ports:
       - 80:80
+    networks:
+      - front-tier
+      - back-tier
     restart: always
+
+networks:
+    front-tier:
+      driver: bridge
+    back-tier:
+      driver: bridge
