@@ -5,9 +5,13 @@
  */
 const { varifyToken } = require('../utils/utils')
 const RolesService = require('../services/admin/role/rolesService')
+const consola = require("consola");
 module.exports = function () {
   return async (ctx, next) => {
     const url = ctx.path
+    consola.log("请求url："+url)
+    consola.log("------------------")
+    consola.log("请求ctx："+ctx)
     // 对前端展示、登录、注册等路由进行放行
     if (url.substring(0, 11) === '/api/v1/web'
       || url === '/api/v1/admin/login'
@@ -15,6 +19,8 @@ module.exports = function () {
       || url === '/api/v1/admin/logout') {
       await next()
     } else {
+      consola.log("请求ctx.headers ："+ctx.headers )
+      consola.log("ctx.headers.authorization："+ctx.headers.authorization)
       // 判断headers 中是否存在 authorization
       if (ctx.headers && ctx.headers.authorization === undefined) {
         ctx.status = 401
@@ -43,6 +49,7 @@ module.exports = function () {
             }
             permissionApi.push(tmp)
           }
+          consola.log("permissionApi ："+permissionApi )
           const res = permissionApi.filter(item => {
             const index = item.path.indexOf(':')
             if (index !== -1) {
