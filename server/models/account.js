@@ -25,7 +25,7 @@ const Account = sequelize.define(
       avatar:{
         type: DataTypes.STRING(1500), // 字段类型
         allowNull: true, // 是否允许为空
-        defaultValue:'http://localhost:3000/upload/20210612/16234847490027294.png'
+        defaultValue:'http://localhost:8890/upload/20210612/16234847490027294.png'
       },
       sex: {
         type: DataTypes.STRING, // 字段类型

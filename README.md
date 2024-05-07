@@ -104,7 +104,7 @@ docker compose up -d
 
 - `./admin/.env.production`
 
-  `VUE_APP_BASE_API = '你自己的域名:3000/api/v1'`
+  `VUE_APP_BASE_API = '你自己的域名:8890/api/v1'`
 
 - `./admin/vue.config.js`
 
@@ -120,7 +120,7 @@ docker compose up -d
 
 - `./web/src/utils/request.ts`
 
-  `baseURL: '/api'` => `你自己的域名:3000/api`
+  `baseURL: '/api'` => `你自己的域名:8890/api`
 
 docker并未使用go版本
 
@@ -170,7 +170,7 @@ npm i pm2 -g
 11.图片路径问题请尽量使用自己的cdn服务或者把资源放在自己的服务器上，替换数据库已经存在的图片路径，你可以使用
 如下的sql语句：
 ```mysql
-UPDATE [tablename] SET [fieldname] = REPLACE([fieldname], 'locolhost:3000','[yourHOST]')
+UPDATE [tablename] SET [fieldname] = REPLACE([fieldname], 'locolhost:8890','[yourHOST]')
 ```
 图片资源不太需要nginx反向代理，你可以参考如下的配置:
 ```nginx

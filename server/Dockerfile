@@ -28,7 +28,7 @@ CMD ["bash", "run.sh"]
 #RUN cnpm install
 #
 ## 暴露Node.js应用所需的端口
-#EXPOSE 3000
+#EXPOSE 8890
 #
 ## 启动Node.js应用
 #CMD [ "node", "app.js" ]

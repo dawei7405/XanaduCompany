@@ -12,8 +12,8 @@ const name = defaultSettings.title || 'bingjikeji' // page title
 // 使用管理员权限执行命令行。
 // 例如，Mac:sudo npm run
 // 可以通过以下方法更改端口：
-// port = 4000 npm run dev OR npm run dev --port = 9528
-const port = process.env.port || process.env.npm_config_port || 4000 // dev port
+// port = 4001 npm run dev OR npm run dev --port = 9528
+const port = process.env.port || process.env.npm_config_port || 4001 // dev port
 
 // 所有配置项说明可在中找到 https://cli.vuejs.org/config/
 module.exports = {

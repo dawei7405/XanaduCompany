@@ -24,7 +24,7 @@ const {isValidImage} = require("./utils/utils");
 const {uploadFile} = require("./utils/manageImageWithQiniu");
 
 // 后端服务端口
-const Port = process.env.PORT || 3000
+const Port = process.env.PORT || 8890
 const staticPath = './static'
 
 // 实例对象
