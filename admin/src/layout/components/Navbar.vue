@@ -28,9 +28,9 @@
               首页
             </el-dropdown-item>
           </router-link>
-          <a target="_blank" href="https://aerowang.cn">
-            <el-dropdown-item>个人网站</el-dropdown-item>
-          </a>
+<!--          <a target="_blank" href="https://aerowang.cn">-->
+<!--            <el-dropdown-item>个人网站</el-dropdown-item>-->
+<!--          </a>-->
           <el-dropdown-item divided @click.native="logout">
             <span style="display:block;">退出登录</span>
           </el-dropdown-item>
