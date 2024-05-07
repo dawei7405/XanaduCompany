@@ -1,5 +1,5 @@
 module.exports = {
-  title: 'bingjikeji',
+  title: '并济科技',
 
   /**
    * @type {boolean} true | false

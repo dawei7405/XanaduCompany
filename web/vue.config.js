@@ -102,7 +102,7 @@ const VueConfig = {
         if (USE_CDN) {
           args[0].cdn = cdn.build
         }
-        args[0].title = 'bingjikeji'
+        args[0].title = '并济科技'
         return args
       })
       // 压缩图片(目前引发了诸多bug，暂时拿掉吧)
@@ -119,7 +119,7 @@ const VueConfig = {
       config.entry('app').clear().add('./src/main-dev.ts')
       config.plugin('html').tap(args => {
         args[0].cdn = cdn.dev
-        args[0].title = 'Dev-bingjikeji'
+        args[0].title = '并济科技'
         return args
       })
     })

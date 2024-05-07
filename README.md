@@ -95,6 +95,7 @@ docker 一键自动部署
 把项目上传到服务器后到根目录下执行
 关闭防火墙
 # 主目录下
+#Docker version 26.1.0,
 docker compose up -d
 
 # 即可访问
