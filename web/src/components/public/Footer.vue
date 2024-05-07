@@ -14,14 +14,7 @@
         <h2>邮编: 641000</h2>
         <h2>传真: 0832-5350555</h2>
       </div>
-      <div class="contact_us footer-content-column">
-        <h2>联系我们</h2>
-        <ul class="contact_list">
-          <li v-for="(item, index) in contact_way" :key="index">
-            <a :href="'mailto:' + item.email">{{ item.name }}</a>
-          </li>
-        </ul>
-      </div>
+
       <div class="focus_us footer-content-column">
 <!--        <h2 style="text-align: center">实时动态与招聘信息，扫码关注我们</h2>-->
         <div class="media">
@@ -38,7 +31,14 @@
           </div>
         </div>
       </div>
-
+      <div class="contact_us footer-content-column">
+        <h2>联系我们</h2>
+        <ul class="contact_list">
+          <li v-for="(item, index) in contact_way" :key="index">
+            <a :href="'mailto:' + item.email">{{ item.name }}</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </template>
@@ -152,6 +152,7 @@
       color: #d2d3d4;
       position: relative;
       text-align: center;
+      //max-width: 382px;
 
       h2 {
         margin-bottom: 18px;
@@ -177,21 +178,24 @@
     }
 
     .about_us {
-      max-width: 202px;
+      //max-width: 202px;
+      max-width: 33%;
     }
 
     .contact_us {
-      max-width: 202px;
+      //max-width: 202px;
+      max-width: 35%;
     }
 
     .focus_us {
       text-align: left;
       padding-left: 10px;
+      max-width: 32%;
 
       .media {
         margin-top: 18px;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
       }
 
       span {
@@ -211,7 +215,7 @@
       margin-left: 96px;
       height: 55px;
       text-align: left;
-      max-width: 382px;
+      //max-width: 382px;
       min-width: 350px;
 
       h2 {
