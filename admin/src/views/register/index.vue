@@ -95,9 +95,9 @@ export default {
   name: 'Register',
   data () {
     const validateUsername = (rule, value, callback) => {
-      const reg = /^[a-zA-Z0-9]{4,9}$/
+      const reg = /^[a-zA-Z0-9]{4,30}$/
       if (!reg.test(value)) {
-        callback(new Error('账号必须是由4-9位数字或字母'))
+        callback(new Error('账号必须是由4-30位数字或字母'))
       } else {
         callback()
       }

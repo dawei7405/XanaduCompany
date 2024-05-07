@@ -201,7 +201,7 @@ export default {
       bindAccount: [
         {
           icon: 'qq',
-          accountId: '2440178177',
+          // accountId: '2440178177',
           desc: '绑定QQ'
         },
         {

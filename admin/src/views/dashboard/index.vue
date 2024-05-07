@@ -202,13 +202,13 @@ export default {
     this.fwChart()
     console.log(this.roleName[0])
     if (this.roleName[0] !== '管理员') {
-      this.flag = false
-      this.$message({
-        showClose: true,
-        message: `你当前的角色为 ${this.roleName}，如果需要体验管理员权限，请查看公众号，谢谢`,
-        type: 'warning',
-        duration: 0
-      })
+      // this.flag = false
+      // this.$message({
+      //   showClose: true,
+      //   message: `你当前的角色为 ${this.roleName}，如果需要体验管理员权限，请查看公众号，谢谢`,
+      //   type: 'warning',
+      //   duration: 0
+      // })
     }
   },
   // 每次进入路有前，重新获取数据
