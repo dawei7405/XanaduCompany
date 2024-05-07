@@ -27,7 +27,7 @@
         <div class="idea-right">
 <!--          <div class="block-line"></div>-->
           <p class="idea-title">{{ serviceIdeaInfo.ideaTitle }}</p>
-          <p class="idea-subtitle">{{ serviceIdeaInfo.ideaSubTitle }}</p>
+<!--          <p class="idea-subtitle">{{ serviceIdeaInfo.ideaSubTitle }}</p>-->
           <img :src="serviceIdeaImg[1].path" :alt="serviceIdeaImg[1].name">
           <p class="idea-desc">{{ serviceIdeaInfo.ideaDesc }}</p>
           <router-link to="/news">
@@ -84,7 +84,8 @@
   const serviceIdeaInfo = ref<InfoData>({
     ideaTitle: '服务理念',
     ideaSubTitle: 'SERVICE IDEA',
-    ideaDesc: '通过提供灵活、高性能的计算资源，解放了创新力，推动了科技的不断前进。它为用户提供了低成本、高效的解决方案，无论是企业还是个人，都能够受益于这种共享计算资源的模式。随着算力服务平台的发展，可以预见科技创新将迎来更广阔的发展空间，为未来的科技进步和社会发展贡献更多的动力。'
+    ideaDesc: '通过提供灵活、高性能的计算资源，解放了创新力，推动了科技的不断前进。它为用户提供了低成本、高效的解决方案，无论是企业还是个人，' +
+      '都能够受益于这种共享计算资源的模式。随着算力服务平台的发展，可以预见科技创新将迎来更广阔的发展空间，为未来的科技进步和社会发展贡献更多的动力。'
   })
   const serviceIdeaImg = ref<ImgItem[]>([])
   const caseList = ref<CaseItem[]>([])
@@ -231,8 +232,8 @@
     .idea-right {
       height: 500px;
       width: calc(100% - 600px);
-      margin-left: 100px;
-      padding-top: 50px;
+      margin-left: 50px;
+      padding-top: 30px;
 
       .block-line {
         margin: 0 0 12px 0;
@@ -258,11 +259,11 @@
       }
 
       img {
-        width: 500px;
+        width: 100%;
         height: 200px;
         object-fit: cover;
-        margin-top: 40px;
-        margin-bottom: 30px;
+        //margin-top: 40px;
+        margin-bottom: 10px;
         padding: 10px;
         border: #d3dce6 2px dashed;
       }
@@ -273,7 +274,7 @@
         -webkit-line-clamp: 4;
         overflow: hidden;
         max-height: 88px;
-        max-width: 550px;
+        //max-width: 550px;
         font-size: 14px;
         line-height: 30px;
         color: #646a73;

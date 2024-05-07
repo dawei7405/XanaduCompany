@@ -112,7 +112,9 @@ h2 {
     //color: rgba(255, 255, 255, 1) !important;
     //transition: all 0.3s ease;
     .header_container {
-        height: 100%;
+      background-color: #D9AFD9;
+      background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+      height: 100%;
     }
 }
 

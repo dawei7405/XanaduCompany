@@ -23,7 +23,7 @@
         </ul>
       </div>
       <div class="focus_us footer-content-column">
-        <h2 style="text-align: center">实时动态与招聘信息，扫码关注我们</h2>
+<!--        <h2 style="text-align: center">实时动态与招聘信息，扫码关注我们</h2>-->
         <div class="media">
           <div :class="item.name" v-for="(item, index) in focus_icon" :key="index">
             <el-popover placement="top" trigger="hover">
@@ -97,7 +97,8 @@
             name: 'weixin',
             path: require('../../assets/img/focus/qr_weixin.png'),
             qr: require('../../assets/img/focus/qr_weixin.png'),
-            info: '关注官方微信公众号'
+            // info: '关注官方微信公众号'
+            info: '实时动态与招聘信息，扫码关注我们'
           },
           // {
           //   name: 'bilibili',
@@ -125,6 +126,9 @@
     width: 100%;
     background: #1f2329;
     padding-bottom: 60px;
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+
   }
 
   .footer_content {
@@ -167,7 +171,7 @@
         }
 
         a {
-          color: #d2d3d4;
+          color: #2a88e5;
         }
       }
     }

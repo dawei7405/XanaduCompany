@@ -40,7 +40,7 @@
         <div class = "update-time">
           <span>最近更新时间：</span>&nbsp;&nbsp;<span>{{ jobDetail.update_time }}</span>
         </div>
-        <el-button round type = "primary" style="width: 150px"><a href = "mailto:aerowangue@126.com">投递</a></el-button>
+        <el-button round type = "primary" style="width: 150px"><a href = "master@scmerge.com">投递</a></el-button>
       </div>
     </div>
     <AwFooter></AwFooter>
