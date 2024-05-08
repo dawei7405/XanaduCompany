@@ -36,22 +36,48 @@
         </div>
       </div>
     </div>
-    <div class="content-blok service-case">
-      <div class="service-case">
-        <div class="block-line"></div>
-        <p class="case-title">我们的服务</p>
-        <p class="case-subtitle">我们已定制多套解决方案，助您轻松跨入“互联网+”时代</p>
-        <div class="case-list">
-          <div class="case-info" v-for="(item, index) in caseList" :key="index">
-            <el-card :body-style="{ padding: '0px' }" shadow="hover">
-              <img :src="item.path" :alt="item.desc">
-            </el-card>
-            <el-progress :percentage="50" :show-text="false"></el-progress>
-            <p class="case-desc">{{ item.desc }}</p>
+
+    <div class="content-blok service-idea">
+      <div class="service-content-all">
+        <div class="service-content">
+          <div class="service-left1">
+            <div class="service-left11">
+              合作伙伴
+            </div>
+            <div class="service-left12">
+              CORPORATE PARTNERS
+            </div>
+            <div class="service-left13">
+              携手共谱“智算”高歌
+            </div>
+          </div>
+
+          <div class="service-right">
+            <div class="div-itemf" >
+              <div class="div-item" v-for="(item, index) in divItemList" :key="index">
+                <img :src=item.path alt="">
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
+<!--    <div class="content-blok service-case">-->
+<!--      <div class="service-case">-->
+<!--        <div class="block-line"></div>-->
+<!--        <p class="case-title">我们的服务</p>-->
+<!--        <p class="case-subtitle">我们已定制多套解决方案，助您轻松跨入“互联网+”时代</p>-->
+<!--        <div class="case-list">-->
+<!--          <div class="case-info" v-for="(item, index) in caseList" :key="index">-->
+<!--            <el-card :body-style="{ padding: '0px' }" shadow="hover">-->
+<!--              <img :src="item.path" :alt="item.desc">-->
+<!--            </el-card>-->
+<!--            <el-progress :percentage="50" :show-text="false"></el-progress>-->
+<!--            <p class="case-desc">{{ item.desc }}</p>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
   </div>
 </template>
 <script lang="ts" setup name="">
@@ -87,10 +113,35 @@
     ideaDesc: '通过提供灵活、高性能的计算资源，解放了创新力，推动了科技的不断前进。它为用户提供了低成本、高效的解决方案，无论是企业还是个人，' +
       '都能够受益于这种共享计算资源的模式。随着算力服务平台的发展，可以预见科技创新将迎来更广阔的发展空间，为未来的科技进步和社会发展贡献更多的动力。'
   })
+
+  type divItem =  {
+    path: string;
+  }
+
+  const divItemList = ref<divItem[]>([])
   const serviceIdeaImg = ref<ImgItem[]>([])
   const caseList = ref<CaseItem[]>([])
   const percentage = ref('50')
   onBeforeMount(() => {
+    divItemList.value = [
+      {
+        path: require('../assets/img/index/hz1.png')
+      },{
+        path: require('../assets/img/index/hz2.png')
+      },{
+        path: require('../assets/img/index/hz3.png')
+      },{
+        path: require('../assets/img/index/hz4.png')
+      },{
+        path: require('../assets/img/index/hz5.png')
+      },{
+        path: require('../assets/img/index/hz6.png')
+      },{
+        path: require('../assets/img/index/hz7.png')
+      },{
+        path: require('../assets/img/index/hz8.png')
+      }
+    ]
     serviceList.value = [
       {
         description: '算力服务',
@@ -216,6 +267,7 @@
   }
 
   .service-idea {
+    margin-top: 50px;
     background-color: #F5F5F5;
     width: 100%;
 
@@ -348,4 +400,89 @@
       }
     }
   }
+
+
+
+  .service-idea {
+    background-color: #F5F5F5;
+    width: 100%;
+
+
+    .service-content-all {
+      height: 600px;
+      width: 100%;
+      background: url("../assets/img/index/about-back.jpg") repeat;
+    }
+    .service-content {
+      //background-color: blueviolet;
+      overflow: visible;
+      max-width: 1100px;
+      position: relative;
+      width: 100%;
+      margin: 0 auto;
+      padding: 0;
+      z-index: 10;
+      height: 100%;
+      overflow: hidden;
+      box-sizing: border-box;
+
+      .service-left1{
+        //background-color: red;
+        overflow: visible;
+        position: absolute;
+        height: 100%;
+        width: 340px;
+        top: 173px;
+
+        .service-left11{
+          font-weight: bold;
+          color: #76c8d0;
+          font-size: 30px;
+          height: 45px;
+        }
+        .service-left12{
+          font-size: 19px;
+          font-weight: bold;
+          color: #ffffff;
+          padding-top: 20px;
+        }
+        .service-left13{
+          font-size: 16px;
+          color: #ffffff;
+          font-weight: bold;
+          padding-top: 50px;
+        }
+
+      }
+    }
+    .service-right{
+      //background-color: #8f959e;
+      width: 700px;
+      height: 250px;
+      left: 34.5%;
+      top: 203px;
+      position: absolute;
+
+      .div-itemf {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        .div-item {
+          margin-bottom: 2%;
+          width: 23.5%;
+          height: 100px;
+          position: relative;
+          display: flex;
+          justify-content: space-evenly;
+          //justify-content: space-between;
+        }
+      }
+
+    }
+    .service-idea3 {
+
+    }
+
+  }
+
 </style>
