@@ -215,8 +215,8 @@ CREATE TABLE `aw_news_types`  (
 -- ----------------------------
 -- Records of aw_news_types
 -- ----------------------------
-INSERT INTO `aw_news_types` VALUES (1, '最新动态', '2021-04-13 21:18:52', '2021-04-13 21:18:54');
-INSERT INTO `aw_news_types` VALUES (2, '典型案例', '2021-04-13 21:19:12', '2021-04-13 21:19:14');
+INSERT INTO `aw_news_types` VALUES (1, '行业动态', '2021-04-13 21:18:52', '2021-04-13 21:18:54');
+INSERT INTO `aw_news_types` VALUES (2, '公司新闻', '2021-04-13 21:19:12', '2021-04-13 21:19:14');
 INSERT INTO `aw_news_types` VALUES (3, '通知公告', '2021-04-13 21:19:33', '2021-04-13 21:19:35');
 
 -- ----------------------------

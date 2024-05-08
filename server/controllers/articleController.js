@@ -43,7 +43,7 @@ module.exports = {
   // 获取热门新闻
   hotNews: async (ctx) => {
     const result = await NewsService.getHotNews()
-    if (result.length > 0) {
+    if (result.length >= 0) {
       const hotNews = []
       for (let i = 0; i < result.length; i++) {
         let date = result[i].dataValues.publish_time
