@@ -186,7 +186,7 @@ onBeforeRouteLeave((to, from, next) => {
   .product-fullpage-contens{
     //border: 4px solid red;
     border-radius: 20px;
-    background-color: #b8e5cf;
+    background-color: #e0efe8;
     position: absolute;
     //right: 124px;
     left: calc(100% - 36%);
