@@ -207,3 +207,23 @@ location ~ .*\.(gif|jpg|jpeg|png|bmp|swf|webp|jfif)$
 * [vue3](https://vuejs.org)
 望各位详细阅读本文档，并参考优质一点的学习资源，入门时少看csdn!
 
+
+
+部署docker记得修改以下配置
+
+admin
+   \bingjikeji\admin\.env.production
+            VUE_APP_BASE_API = 'https://bj.honasoft.com:8890/api/v1'
+
+
+server
+   \bingjikeji\server\config\dbinfo.js
+            host: "192.168.10.202", // 主机地址
+            port: "8891", // 端口号
+
+web
+    1.\bingjikeji\web\.env.production
+            VUE_APP_BASEURL = "https://bj.honasoft.com:8890/api/v1"
+    2.\bingjikeji\web\src\utils\request.ts
+            baseURL: 'https://bj.honasoft.com:8890/api'
+	 

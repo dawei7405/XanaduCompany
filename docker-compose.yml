@@ -9,7 +9,7 @@ services:
       - MYSQL_DATABASE=bingjikeji
     restart: always
     ports:
-      - 3306:3306
+      - 8891:3306
     # 初始命令
     command:
       --character-set-server=utf8mb4
