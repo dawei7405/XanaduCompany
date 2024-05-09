@@ -11,21 +11,38 @@
       <transition :duration="duration" :name="transitionName">
         <!-- ... the buttons ... -->
         <div :key="activeIndex" class="view-wrapper" v-if="!loading" :style="`backgroundImage:url(${item.cover_img})`">
-          <div class="content">
-            <div class="logo">
-              <img :src="item.product_logo" width="100%" height="100%" alt="" />
-            </div>
-            <h2>{{ item.product_title }}</h2>
-            <div class="description">
-              <p>{{ item.product_desc }}</p>
-              <p>
-                {{ item.product_sub_desc }}
-              </p>
-              <p>更多信息，请访问：</p><a :href="item.link" target="_blank">{{ item.product_link }}</a>
-            </div>
-          </div>
+<!--          <div class="content">-->
+<!--            <div class="logo">-->
+<!--              <img :src="item.product_logo" width="100%" height="100%" alt="" />-->
+<!--            </div>-->
+<!--            <h2>{{ item.product_title }}</h2>-->
+<!--            <div class="description">-->
+<!--              <p>{{ item.product_desc }}</p>-->
+<!--              <p>-->
+<!--                {{ item.product_sub_desc }}-->
+<!--              </p>-->
+<!--              <p>更多信息，请访问：</p><a :href="item.link" target="_blank">{{ item.product_link }}</a>-->
+<!--            </div>-->
+<!--          </div>-->
         </div>
       </transition>
+
+      <div  class="product-fullpage-contens">
+        <transition :duration="duration" :name="transitionName">
+          <div :key="activeIndex" class="view-wrapper" >
+              <div class="content">
+                <h2>{{ item.product_title }}</h2>
+                <div class="description">
+                  <p>{{ item.product_desc }}</p>
+                  <p>
+                    {{ item.product_sub_desc }}
+                  </p>
+                  <p>更多信息，请访问：</p><a :href="item.link" target="_blank">{{ item.product_link }}</a>
+                </div>
+              </div>
+          </div>
+        </transition>
+      </div>
     </div>
   </div>
 </template>
@@ -166,13 +183,24 @@ onBeforeRouteLeave((to, from, next) => {
     }
   }
 
+  .product-fullpage-contens{
+    //border: 4px solid red;
+    border-radius: 20px;
+    background-color: #b8e5cf;
+    position: absolute;
+    //right: 124px;
+    left: calc(100% - 36%);
+    width: 29%;
+    height: 100%;
+  }
+
   .view-wrapper {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     position: absolute;
     height: 100vh;
-    width: 100%;
+    width: 57%;
     // padding-top: 100px;
     padding-left: 100px;
 
@@ -193,6 +221,7 @@ onBeforeRouteLeave((to, from, next) => {
         line-height: 32px;
         font-size: 28px;
         color: #1f2329;
+        text-align: center;
       }
 
       .description {
