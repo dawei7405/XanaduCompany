@@ -176,7 +176,7 @@
 
   .service-block {
     max-width: 1440px;
-    height: 500px;
+    height: 400px;
     margin: 0 auto;
     text-align: center;
     overflow-x: hidden;

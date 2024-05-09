@@ -30,7 +30,7 @@
 <!--          <p class="idea-subtitle">{{ serviceIdeaInfo.ideaSubTitle }}</p>-->
           <img :src="serviceIdeaImg[1].path" :alt="serviceIdeaImg[1].name">
           <p class="idea-desc">{{ serviceIdeaInfo.ideaDesc }}</p>
-          <router-link to="/news">
+          <router-link to="/aboutUs">
             <el-button type="primary" round>了解更多</el-button>
           </router-link>
         </div>
