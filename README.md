@@ -226,4 +226,6 @@ web
             VUE_APP_BASEURL = "https://bj.honasoft.com:8890/api/v1"
     2.\bingjikeji\web\src\utils\request.ts
             baseURL: 'https://bj.honasoft.com:8890/api'
+    3.\bingjikeji\admin\vue.config.js
+            publicPath: '/admin/'
 	 

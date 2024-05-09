@@ -51,7 +51,7 @@ const VueConfig = {
      * 如果你更懒一些，可以使用【宝塔面板进行部署】**/
     proxy: {
       '/api': {
-        target: IS_PROD ? 'https://company.zerotower.cn' : 'http://localhost:8890',
+        target: IS_PROD ? 'https://company.zerotower.cn' : 'https://localhost:8890',
         // ws: true,
         changeOrigin: true
         // pathRewrite: {//路径重写

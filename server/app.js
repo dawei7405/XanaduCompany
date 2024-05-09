@@ -25,7 +25,7 @@ const {isValidImage} = require("./utils/utils");
 const {uploadFile} = require("./utils/manageImageWithQiniu");
 
 // 后端服务端口
-const Port = process.env.PORT || 8890
+const Port = process.env.PORT || 8888
 const staticPath = './static'
 
 // 实例对象
@@ -112,16 +112,16 @@ app.on('error', err => {
   console.log(err)
 })
 // 端口
-// app.listen(Port, () => {
-//   consola.success(`Server running at Port:${Port}`)
-// })
+app.listen(Port, () => {
+  consola.success(`Server running at Port:${Port}`)
+})
 
 // 确保替换以下路径为你的证书和私钥文件的实际路径
 const privateKey = fs.readFileSync('config/ssl/bj.honasoft.com.key', 'utf8');
 const certificate = fs.readFileSync('config/ssl/bj.honasoft.com_bundle.pem', 'utf8');
 const options  = { key: privateKey, cert: certificate };
 const httpsServer = https.createServer(options , app.callback());
-httpsServer.listen(Port, () => {
-  consola.success(`Server running at Port:${Port} ----`)
+httpsServer.listen(8889, () => {
+  consola.success(`Server running at Port:8889 ----https`)
 });
 
