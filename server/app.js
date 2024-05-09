@@ -121,7 +121,7 @@ const privateKey = fs.readFileSync('config/ssl/bj.honasoft.com.key', 'utf8');
 const certificate = fs.readFileSync('config/ssl/bj.honasoft.com_bundle.pem', 'utf8');
 const options  = { key: privateKey, cert: certificate };
 const httpsServer = https.createServer(options , app.callback());
-httpsServer.listen(8889, () => {
+httpsServer.listen(8890, () => {
   consola.success(`Server running at Port:8889 ----https`)
 });
 
