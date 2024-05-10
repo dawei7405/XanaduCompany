@@ -105,21 +105,17 @@
     ryzsList.value = [
       {
         path: require('../assets/img/aboutus/ry/gjjkjxzxqy.jpg'),
-        desc: '证书'
+        desc: '国家级科技型中小企业证书'
       },
       {
         path: require('../assets/img/aboutus/ry/gxjsqytp.jpg'),
-        desc: '证书'
+        desc: '高新技术企业证书'
       }, {
         path: require('../assets/img/aboutus/ry/njsqyjszxtp.jpg'),
-        desc: '证书'
+        desc: '内江市企业技术中心证书'
       }, {
         path: require('../assets/img/aboutus/ry/zjtxtp.jpg'),
-        desc: '证书'
-      }
-      , {
-        path: require('../assets/img/aboutus/ry/zjtxtp.jpg'),
-        desc: '证书ddddddddddd'
+        desc: '四川省专精特新中小企业证书'
       }
     ]
     divBgList.value = [
@@ -324,7 +320,7 @@
 
     .service-content-rongyu {
       padding-top: 50px;
-      background-color: #de0f1f;
+      background-color: #e75252;
       border-radius: 15px;
       height: 400px;
       margin-left: 250px;
