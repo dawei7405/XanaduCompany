@@ -5,5 +5,5 @@ export default axios.create({
   // baseURL: '/api'
   // baseURL: 'http://182.135.122.28:8890/api'
   baseURL: 'https://bj.honasoft.com:8890/api'
-  // baseURL: 'http://localhost:8890/api'
+  // baseURL: 'http://localhost:8888/api'
 })
