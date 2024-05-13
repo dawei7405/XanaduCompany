@@ -4,6 +4,7 @@ const router = new Router()
 const news = require('../../controllers/articleController')
 const product = require('../../controllers/productController')
 const job = require('../../controllers/jobController')
+const message = require('../../controllers/messageController')
 
 const routers = router
   // 新闻
@@ -18,4 +19,7 @@ const routers = router
   .get('/job-filters', job.jobFilter)
   .post('/job', job.jobList)
   .get('/job/:id', job.getJobDetail)
+
+  // 留言
+  .post('/submitMessage', message.submitMessage)
 module.exports = routers

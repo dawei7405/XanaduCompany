@@ -16,7 +16,7 @@
       </div>
 
       <div class="focus_us footer-content-column">
-<!--        <h2 style="text-align: center">实时动态与招聘信息，扫码关注我们</h2>-->
+        <!--        <h2 style="text-align: center">实时动态与招聘信息，扫码关注我们</h2>-->
         <div class="media">
           <div :class="item.name" v-for="(item, index) in focus_icon" :key="index">
             <el-popover placement="top" trigger="hover">
@@ -32,18 +32,134 @@
         </div>
       </div>
       <div class="contact_us footer-content-column">
-        <h2>联系我们</h2>
-        <ul class="contact_list">
-          <li v-for="(item, index) in contact_way" :key="index">
-            <a :href="'mailto:' + item.email">{{ item.name }}</a>
-          </li>
-        </ul>
+<!--                <h2>联系我们</h2>-->
+<!--                <ul class="contact_list">-->
+<!--                  <li v-for="(item, index) in contact_way" :key="index">-->
+<!--                    <a :href="'mailto:' + item.email">{{ item.name }}</a>-->
+<!--                  </li>-->
+<!--                </ul>-->
+        <el-button type="text" @click="dialog = true">联系我们</el-button>
+      </div>
+
+      <div >
+        <!--         style="width: 80%;height:80%;margin: 50px ;text-align: center;background-color: azure;border-radius: 15px"-->
+        <el-drawer class="el-drawer"
+                   style="text-align: center"
+                   title="联系我们"
+                   :show-close="false"
+                   v-model="dialog"
+                   direction="rtl"
+                   custom-class="footer-drawer"
+                   ref="drawer"
+        >
+
+          <div class="message-drawer__content">
+            <el-form :model="form" :rules="ruleform" ref="formRef">
+              <el-form-item label="反馈信息" :label-width="formLabelWidth" prop="desc">
+                <el-input type="textarea" maxlength="500" show-word-limit="true" placeholder="请填写反馈信息"
+                          rows="5" v-model="form.desc"></el-input>
+              </el-form-item>
+              <el-form-item label="您的姓名" :label-width="formLabelWidth" prop="username">
+                <el-input v-model="form.username" maxlength="100" placeholder="请填写您的姓名"></el-input>
+              </el-form-item>
+              <el-form-item label="您的手机号" :label-width="formLabelWidth" prop="phone">
+                <el-input v-model="form.phone" maxlength="20" placeholder="请填写您的手机号"></el-input>
+              </el-form-item>
+              <el-form-item label="您的邮箱" :label-width="formLabelWidth" prop="email">
+                <el-input v-model="form.email" maxlength="100" placeholder="请填写您的邮箱"></el-input>
+              </el-form-item>
+            </el-form>
+            <div class="footer-drawer-button">
+              <el-button @click="cancelForm">取 消</el-button>
+              <el-button
+                type="primary"
+                @click="conmitForm"
+                :loading="loading"
+              >{{ loading ? '提交中 ...' : '确 定' }}
+              </el-button
+              >
+            </div>
+          </div>
+
+        </el-drawer>
       </div>
     </div>
   </div>
 </template>
 <script lang="ts" setup>
-  import {onMounted, ref} from 'vue'
+  import {onMounted, ref, reactive} from 'vue'
+  import {ElMessageBox, ElMessage} from 'element-plus';
+  import {submitMessage} from '@/apis/public/footer'
+  import {getJobListApi} from "@/apis/job";
+
+  const validatePhone = (rule, value, callback) => {
+    const reg = /^1[3-9]\d{9}$/;
+    if (!value) {
+      return callback(ElMessage.error('手机号码不能为空！'));
+    } else if (!reg.test(value)) {
+      return callback(ElMessage.error('请输入正确的手机号码！'));
+    } else {
+      callback();
+    }
+  };
+  const ruleform =
+    {
+      desc: [{required: true, message: "请填写留言信息", trigger: 'blur'}],
+      username: [{required: true, message: "请填写您的姓名", trigger: 'blur'}],
+      phone: [{required: true, message: "请填写您的手机号", trigger: 'blur', validator: validatePhone}],
+      email: [{required: true, message: "请填写您的邮箱", trigger: ['blur', 'change'], type: 'email'}],
+    };
+
+
+  const form = reactive({
+    desc: '',
+    phone: '',
+    username: '',
+    email: '',
+  });
+
+  const formRef = ref(null);
+  const timer = ref(null);
+  const dialog = ref(false);
+  const loading = ref(false);
+  const formLabelWidth = ref("100px");
+
+  const conmitForm = (done) => {
+    if (loading.value) {
+      return;
+    }
+    formRef.value.validate((valid) => {
+      if (valid) {
+        ElMessageBox
+          .confirm('确定要提交反馈信息吗？')
+          .then(async (_) => {
+            loading.value = true;
+            const {data: res} = await submitMessage({form});
+            if (res.status !== 200) {
+              dialog.value = false;
+              loading.value = false;
+              ElMessage.success("反馈信息提交失败，请刷新后重试！")
+            } else {
+              dialog.value = false;
+              loading.value = false;
+              ElMessage.success("反馈信息提交成功！")
+            }
+
+          })
+          .catch((_) => {
+          });
+      } else {
+        return false;
+      }
+    });
+
+
+  };
+  const cancelForm = () => {
+    loading.value = false;
+    dialog.value = false;
+  };
+
 
   type ConcatItem = {
     name: string;
@@ -294,5 +410,19 @@
     }
 
     //margin-left: 30px;
+  }
+  /deep/.footer-drawer {
+    text-align: center !important;
+    height: 90% !important;
+    top: 20px !important;
+    bottom: 0 !important;
+    background-color: #ccdbf3 !important;
+    border-radius: 15px;
+    margin-right: 10px;
+  }
+
+  .footer-drawer-button {
+    margin-top: 80px;
+    text-align: center;
   }
 </style>
