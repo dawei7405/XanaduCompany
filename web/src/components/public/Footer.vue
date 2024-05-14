@@ -420,9 +420,17 @@
     border-radius: 15px;
     margin-right: 10px;
   }
+  /deep/.el-form-item {
+    margin-bottom: 20px!important;
+  }
+  /deep/.el-button{
+    padding: 8px 15px !important;
+  }
 
   .footer-drawer-button {
+    padding: 8px 15px;
     margin-top: 80px;
     text-align: center;
   }
+
 </style>
