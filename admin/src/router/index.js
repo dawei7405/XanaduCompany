@@ -101,7 +101,7 @@ export const asyncRoutes = [
     name: 'Account',
     meta: {
       title: '账户管理',
-      icon: 'user',
+      icon: 'el-icon-user',
       roles: []
     },
     children: [
@@ -275,6 +275,37 @@ export const asyncRoutes = [
           icon: 'list'
         }
       }
+    ]
+  },
+  {
+    path: '/about',
+    component: Layout,
+    redirect: '/about/list',
+    name: 'About',
+    meta: {
+      title: '客户相关',
+      icon: 'el-icon-s-comment',
+      roles: []
+    },
+    children: [
+      {
+        path: 'list',
+        component: () => import('@/views/feedback/list'),
+        name: 'MessageList',
+        meta: {
+          title: '反馈信息',
+          icon: 'list'
+        }
+      },
+      {
+        path: 'other',
+        // component: () => import('@/views/feedback/list'),
+        name: 'other',
+        meta: {
+          title: '其他',
+          icon: 'edit'
+        }
+      },
     ]
   },
   {

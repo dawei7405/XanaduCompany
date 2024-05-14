@@ -9,6 +9,7 @@ const article = require('./article')
 const role = require('./roles')
 const job = require('./job')
 const product = require('./product')
+const message = require('./message')
 
 router.use(user.routes(), user.allowedMethods())
 router.use(Routes.routes(), Routes.allowedMethods())
@@ -17,5 +18,6 @@ router.use(article.routes(), article.allowedMethods())
 router.use(role.routes(), role.allowedMethods())
 router.use(job.routes(), job.allowedMethods())
 router.use(product.routes(), product.allowedMethods())
+router.use(message.routes(), message.allowedMethods())
 
 module.exports = router

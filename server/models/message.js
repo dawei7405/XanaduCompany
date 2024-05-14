@@ -26,6 +26,16 @@ const message = sequelize.define(
         desc: {
             type: DataTypes.STRING(500),
             comment: '留言信息'
+        },
+        status:{
+            type: DataTypes.INTEGER(1),
+            allowNull: false, // 是否允许为空
+            defaultValue: 0, // 默认值
+            comment: '处理状态'
+        },
+        result:{
+            type: DataTypes.STRING(500),
+            comment: '处理结果'
         }
     }, {
         timestamps: true,
