@@ -43,12 +43,7 @@ CREATE TABLE `aw_accounts`  (
 -- ----------------------------
 -- Records of aw_accounts
 -- ----------------------------
-INSERT INTO `aw_accounts` VALUES (1, 'admin', '$2b$10$lHM2cWr9x.kcHIbe9aDgTeaU10RuKaoud8Zowm07OyIXJhL6N0bvu', '2021-04-13 22:06:24', '2021-06-12 18:18:47', 1, 'http://182.135.122.28:8890/upload/20210612/16234846156416317.png', '超级管理员', '张三', '男', '技术一部', '浙江-杭州');
-INSERT INTO `aw_accounts` VALUES (2, 'youke', '$2b$10$cX52DV7xdVi3ONXGC1RsXeM8EsCtGQFwFqRYaSW2mDE6fjEhkRadK', '2021-04-14 16:36:04', '2021-06-13 14:37:41', 3, 'https://wpimg.wallstcn.com/f778738c-e4f8-4870-b634-56703b4acafe.gif', '游客，普通权限', '王五', '男', '运营二部', '北京');
-INSERT INTO `aw_accounts` VALUES (16, 'editor', '$2b$10$BmRzMNTLMocyHqzHNutBQuZJJ6j/S0mkdgK/Ffe7E/jiVovFh9ezi', '2021-06-04 21:32:15', '2021-06-15 09:40:16', 2, 'http://182.135.122.28:8890/upload/2021064/16228135311306915.jpg', '文章编辑员', '李四', '男', '运营一部', '北京');
-INSERT INTO `aw_accounts` VALUES (27, 'normal', '$2b$10$yF/EfQIgxM5QErwfOjOX6OL.GH6fTO5yIFbvnzEszbk.FKMHQxWVu', '2021-06-15 22:00:19', '2021-06-15 22:00:19', 3, 'http://182.135.122.28:8890/upload/20210615/16237656051412474.png', '普通用户', NULL, NULL, NULL, NULL);
-INSERT INTO `aw_accounts` VALUES (28, 'normal02', '$2b$10$eOw05lZiBVUF/IOP8cZeYOV4gYcba.1FkNMv1EaC2l20EX0XOq1YO', '2021-06-15 22:00:47', '2021-06-15 22:00:47', 3, 'http://182.135.122.28:8890/upload/20210615/16237656414616152.png', '普通用户', NULL, NULL, NULL, NULL);
-
+INSERT INTO `aw_accounts` VALUES (1, 'admin', '$2b$10$lHM2cWr9x.kcHIbe9aDgTeaU10RuKaoud8Zowm07OyIXJhL6N0bvu', '2021-04-13 22:06:24', '2021-06-12 18:18:47', 1, 'http://182.135.122.28:8890/upload/20210612/16234846156416317.png', '超级管理员', '张三', '男', '技术部', '四川内江');
 -- ----------------------------
 -- Table structure for aw_city_infos
 -- ----------------------------
@@ -162,6 +157,8 @@ INSERT INTO `aw_menu_lists` VALUES (20, NULL, 'Product', NULL, '/product', '2021
 INSERT INTO `aw_menu_lists` VALUES (21, 20, 'CreateProduct', NULL, 'create', '2021-05-29 15:25:50', '2021-05-29 15:25:52', '添加产品');
 INSERT INTO `aw_menu_lists` VALUES (22, 20, 'EditProduct', NULL, 'edit/:id(\\d+)', '2021-05-29 15:26:17', '2021-05-29 15:26:19', '编辑产品');
 INSERT INTO `aw_menu_lists` VALUES (23, 20, 'ProductList', NULL, 'list', '2021-05-29 15:26:41', '2021-05-29 15:26:43', '产品列表');
+INSERT INTO `aw_menu_lists` VALUES (24, NULL, 'About', NULL, '/about', '2021-05-29 15:25:21', '2021-05-29 15:25:23', '联系我们');
+INSERT INTO `aw_menu_lists` VALUES (25, 24, 'MessageList', NULL, 'list', '2021-05-29 15:26:41', '2021-05-29 15:26:43', '反馈信息');
 
 -- ----------------------------
 -- Table structure for aw_news
@@ -274,7 +271,8 @@ INSERT INTO `aw_permissions` VALUES (35, '删除产品', 1, '2021-05-29 16:26:49
 INSERT INTO `aw_permissions` VALUES (36, '获取产品列表', 1, '2021-05-29 16:27:36', '2021-05-29 16:27:39', '/product', 'get');
 INSERT INTO `aw_permissions` VALUES (37, '获取产品详情', 1, '2021-05-29 16:28:14', '2021-05-29 16:28:16', '/product/:id', 'get');
 INSERT INTO `aw_permissions` VALUES (38, '用户列表按日期分组', 1, '2021-06-15 21:51:23', '2021-06-15 21:51:25', '/account/date', 'get');
-
+INSERT INTO `aw_permissions` VALUES (39, '获取反馈信息', 1, '2021-06-15 21:51:23', '2021-06-15 21:51:25', '/messageList', 'get');
+INSERT INTO `aw_permissions` VALUES (40, '处理反馈信息', 1, '2021-06-15 21:51:23', '2021-06-15 21:51:25', '/dealMessage', 'post');
 -- ----------------------------
 -- Table structure for aw_products
 -- ----------------------------
@@ -374,6 +372,8 @@ INSERT INTO `aw_role_menu_lists` VALUES (128, 1, '2021-06-12 18:36:09', '2021-06
 INSERT INTO `aw_role_menu_lists` VALUES (129, 1, '2021-06-12 18:36:09', '2021-06-12 18:36:09', 12, 2);
 INSERT INTO `aw_role_menu_lists` VALUES (131, 1, '2021-06-15 09:40:42', '2021-06-15 09:40:42', 1, 3);
 INSERT INTO `aw_role_menu_lists` VALUES (132, 1, '2021-06-15 09:40:42', '2021-06-15 09:40:42', 2, 3);
+INSERT INTO `aw_role_menu_lists` VALUES (134, 1, '2021-06-15 09:40:42', '2021-06-15 09:40:42', 24, 1);
+INSERT INTO `aw_role_menu_lists` VALUES (135, 1, '2021-06-15 09:40:42', '2021-06-15 09:40:42', 25, 1);
 
 -- ----------------------------
 -- Table structure for aw_role_permissions
@@ -458,6 +458,8 @@ INSERT INTO `aw_role_permissions` VALUES (102, 1, '2021-06-20 16:33:58', '2021-0
 INSERT INTO `aw_role_permissions` VALUES (103, 1, '2021-06-20 16:33:58', '2021-06-20 16:33:58', 2, 23);
 INSERT INTO `aw_role_permissions` VALUES (104, 1, '2021-06-20 16:33:58', '2021-06-20 16:33:58', 2, 36);
 INSERT INTO `aw_role_permissions` VALUES (105, 1, '2021-06-20 16:33:58', '2021-06-20 16:33:58', 2, 37);
+INSERT INTO `aw_role_permissions` VALUES (106, 1, '2021-06-20 16:33:58', '2021-06-20 16:33:58', 1, 39);
+INSERT INTO `aw_role_permissions` VALUES (107, 1, '2021-06-20 16:33:58', '2021-06-20 16:33:58', 1, 40);
 
 -- ----------------------------
 -- Table structure for aw_roles
