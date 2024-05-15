@@ -226,11 +226,10 @@
 
   .footer_container {
     width: 100%;
-    background: #1f2329;
     padding-bottom: 60px;
-    background-color: #8EC5FC;
-    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
 
+    background-color: #D9AFD9;
+    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
   }
 
   .footer_content {
