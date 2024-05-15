@@ -4,10 +4,6 @@
       <div class="footer_logo footer-content-column">
         <div class="logo-container">
           <img :src="logo_url" alt="">
-          <!--                    <div class="logo-text">-->
-          <!--                        <p class="text1">Xanadu</p>-->
-          <!--                        <p class="text2">INTERNET COMPANY</p>-->
-          <!--                    </div>-->
         </div>
         <h2>四川并济科技有限公司</h2>
         <h2>地址：四川省内江市东兴区川南电商中心A座</h2>
@@ -16,7 +12,6 @@
       </div>
 
       <div class="focus_us footer-content-column">
-        <!--        <h2 style="text-align: center">实时动态与招聘信息，扫码关注我们</h2>-->
         <div class="media">
           <div :class="item.name" v-for="(item, index) in focus_icon" :key="index">
             <el-popover placement="top" trigger="hover">
@@ -30,19 +25,12 @@
             </el-popover>
           </div>
         </div>
-      </div>
-      <div class="contact_us footer-content-column">
-<!--                <h2>联系我们</h2>-->
-<!--                <ul class="contact_list">-->
-<!--                  <li v-for="(item, index) in contact_way" :key="index">-->
-<!--                    <a :href="'mailto:' + item.email">{{ item.name }}</a>-->
-<!--                  </li>-->
-<!--                </ul>-->
-        <el-button type="text" @click="dialog = true">联系我们</el-button>
+        <div class="contact_us footer-content-column">
+          <el-button type="text" @click="dialog = true">联系我们</el-button>
+        </div>
       </div>
 
-      <div >
-        <!--         style="width: 80%;height:80%;margin: 50px ;text-align: center;background-color: azure;border-radius: 15px"-->
+
         <el-drawer class="el-drawer"
                    style="text-align: center"
                    title="联系我们"
@@ -50,8 +38,7 @@
                    v-model="dialog"
                    direction="rtl"
                    custom-class="footer-drawer"
-                   ref="drawer"
-        >
+                   ref="drawer">
 
           <div class="message-drawer__content">
             <el-form :model="form" :rules="ruleform" ref="formRef">
@@ -80,9 +67,7 @@
               >
             </div>
           </div>
-
         </el-drawer>
-      </div>
     </div>
   </div>
 </template>
@@ -216,6 +201,7 @@
             // info: '关注官方微信公众号'
             info: '实时动态与招聘信息，扫码关注我们'
           },
+
           // {
           //   name: 'bilibili',
           //   path: require('../../assets/img/focus/bilibili.png'),
@@ -263,64 +249,26 @@
       color: #7b7e81;
     }
 
-    .footer-content-column {
-      flex: 1 1;
-      color: #d2d3d4;
-      position: relative;
-      text-align: center;
-      //max-width: 382px;
-
-      h2 {
-        margin-bottom: 18px;
-        font-size: 16px;
-        font-weight: bold;
-
-      }
-
-      .about_list,
-      .contact_list {
-        text-align: center;
-        font-size: 14px;
-        line-height: 22px;
-
-        li {
-          margin-bottom: 15px;
-        }
-
-        a {
-          color: #2a88e5;
-        }
-      }
-    }
 
     .about_us {
-      //max-width: 202px;
       max-width: 33%;
     }
 
     .contact_us {
-      //max-width: 202px;
-      max-width: 35%;
+      text-align: center;
     }
 
     .focus_us {
-      text-align: left;
+      text-align: center;
       padding-left: 10px;
-      max-width: 32%;
-
+      //max-width: 32%;
+      width: 50%;
       .media {
         margin-top: 18px;
-        display: flex;
-        justify-content: space-between;
-      }
 
-      span {
-        margin-right: 18px;
-        flex: 0 0 auto;
       }
-
       h2 {
-        text-align: left;
+        text-align: center;
         font-size: 14px;
         font-weight: normal;
         margin-bottom: 4px;
@@ -333,6 +281,7 @@
       text-align: left;
       //max-width: 382px;
       min-width: 350px;
+      width: 50%;
 
       h2 {
         font-size: 14px;
