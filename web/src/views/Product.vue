@@ -37,7 +37,7 @@
                   <p>
                     {{ item.product_sub_desc }}
                   </p>
-                  <p>更多信息，请访问：</p><a :href="item.link" target="_blank">{{ item.product_link }}</a>
+                  <p>更多信息，请访问：</p><a :href="item.product_link" target="_blank">并济智算云平台</a>
                 </div>
               </div>
           </div>
@@ -141,7 +141,7 @@ onBeforeRouteLeave((to, from, next) => {
 
 .product {
   position: fixed;
-  z-index: -1;
+  //z-index: -1;
   top: 60px;
   right: 0;
   left: 0;
@@ -151,7 +151,7 @@ onBeforeRouteLeave((to, from, next) => {
 
   &-fullpage-indicator {
     position: absolute;
-    z-index: 333;
+    //z-index: 333;
     right: 50px;
     top: 50%;
     transform: translateY(-50%);
