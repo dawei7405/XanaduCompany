@@ -209,23 +209,17 @@ location ~ .*\.(gif|jpg|jpeg|png|bmp|swf|webp|jfif)$
 
 
 
-部署docker记得修改以下配置
-
-admin
-   \bingjikeji\admin\.env.production
-            VUE_APP_BASE_API = 'https://bj.honasoft.com:8890/api/v1'
+本地运行请修改以下配置
 
 
 server
    \bingjikeji\server\config\dbinfo.js
-            host: "192.168.10.202", // 主机地址
-            port: "8891", // 端口号
+            host: "localhost", // 主机地址
+            port: "3306", // 端口号
 
 web
-    1.\bingjikeji\web\.env.production
-            VUE_APP_BASEURL = "https://bj.honasoft.com:8890/api/v1"
-    2.\bingjikeji\web\src\utils\request.ts
-            baseURL: 'https://bj.honasoft.com:8890/api'
-    3.\bingjikeji\admin\vue.config.js
-            publicPath: '/admin/'
+    1.\bingjikeji\web\src\utils\request.ts
+            baseURL: 'http://localhost:8888/api'
+    2.\bingjikeji\admin\vue.config.js
+            publicPath: '/'
 	 
