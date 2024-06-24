@@ -208,18 +208,59 @@ location ~ .*\.(gif|jpg|jpeg|png|bmp|swf|webp|jfif)$
 望各位详细阅读本文档，并参考优质一点的学习资源，入门时少看csdn!
 
 
+部署说明：
+1.本地运行请修改以下配置
 
-本地运行请修改以下配置
+    server
+       \bingjikeji\server\config\dbinfo.js
+                host: "localhost", // 主机地址
+                port: "3306", // 端口号
+    
+    web
+        1.\bingjikeji\web\src\utils\request.ts
+                baseURL: 'http://localhost:8888/api'
+    admin
+        1.\bingjikeji\admin\vue.config.js
+                publicPath: '/'
+
+2.https方式部署请修改以下配置
+
+    server
+        \bingjikeji\server\config\dbinfo.js
+         host: "192.168.10.202", // 主机地址
+         port: "8891", // 端口号
+    
+    web
+        1.\bingjikeji\web\src\utils\request.ts
+        baseURL: 'https://bj.honasoft.com:8890/api'
+        2.web/.env.production
+        VUE_APP_BASEURL = "https://bj.honasoft.com:8890/api/v1"
+        VUE_APP_PRODURL = "http://bj.honasoft.com:8889/admin/#/login"
+
+    admin
+        1.admin/.env.production
+        VUE_APP_BASE_API = 'https://bj.honasoft.com:8890/api/v1'
+        2.bingjikeji\admin\vue.config.js
+        publicPath: '/admin/',
 
 
-server
-   \bingjikeji\server\config\dbinfo.js
-            host: "localhost", // 主机地址
-            port: "3306", // 端口号
+3.http方式部署请修改以下配置
 
-web
-    1.\bingjikeji\web\src\utils\request.ts
-            baseURL: 'http://localhost:8888/api'
-    2.\bingjikeji\admin\vue.config.js
-            publicPath: '/'
-	 
+    server
+        \bingjikeji\server\config\dbinfo.js
+        host: "192.168.100.100", // 主机地址
+        port: "8891", // 端口号
+    
+    web
+        1.\bingjikeji\web\src\utils\request.ts
+        baseURL: 'http://192.168.100.100:8888/api'
+        2.web/.env.production
+        VUE_APP_BASEURL = "http://192.168.100.100:8888/api/v1
+        VUE_APP_PRODURL = "http://192.168.100.100:8889/admin/#/login
+
+
+    admin
+        1.admin/.env.production
+        VUE_APP_BASE_API = 'http://192.168.100.100:8888/api/v1'
+        2.\bingjikeji\admin\vue.config.js
+        publicPath: '/admin/',
