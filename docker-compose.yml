@@ -31,7 +31,10 @@ services:
     depends_on:
       - webdb
     ports:
+      # https端口映射 8890
       - 8890:8890
+      # http端口映射 8888
+      - 8888:8888
     volumes:
       - /data/serve/upload:/app/static/upload
     networks:

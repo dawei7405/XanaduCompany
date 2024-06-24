@@ -25,7 +25,6 @@ const {isValidImage} = require("./utils/utils");
 const {uploadFile} = require("./utils/manageImageWithQiniu");
 
 // 后端服务端口
-const Port = process.env.PORT || 8888
 const staticPath = './static'
 
 // 实例对象
@@ -112,8 +111,8 @@ app.on('error', err => {
   console.log(err)
 })
 // 端口
-app.listen(Port, () => {
-  consola.success(`Server running at Port:${Port}`)
+app.listen(8888, () => {
+  consola.success(`Server running at Port:8888 ----http`)
 })
 
 // 确保替换以下路径为你的证书和私钥文件的实际路径

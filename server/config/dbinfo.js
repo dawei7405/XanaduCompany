@@ -9,6 +9,9 @@ const config = {
     host: "192.168.10.202", // 主机地址
     port: "8891", // 端口号
 
+    // host: "192.168.100.100", // 主机地址
+    // port: "8891", // 端口号
+
     dialect: "mysql", //数据库类型，支持: 'mysql', 'sqlite', 'postgres', 'mssql'
     logging: true, // 是否启用日志
 }
