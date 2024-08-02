@@ -9,6 +9,7 @@
         <h2>地址：四川省内江市东兴区川南电商中心A座</h2>
         <h2>邮编: 641000</h2>
         <h2>传真: 0832-5350555</h2>
+        <h2>邮箱: master@scmerge.com</h2>
       </div>
 
       <div class="focus_us footer-content-column">
@@ -68,6 +69,14 @@
             </div>
           </div>
         </el-drawer>
+    </div>
+    <div class="footer_other">
+
+      <div class="divider"></div>
+      <div class="copyright_view line_view">Copyright @ 2019-2022 Sichuan Merge Co.,ltd 并济科技 All rights reserved.</div>
+      <div class="icp_view line_view"><a target="_blank" href="https://beian.miit.gov.cn/"> <img class="lw_icon" src="../../assets/img/index/beiab.png" alt="蜀ICP备2023038038号">蜀ICP备2023038038号</a>
+           <a target="_blank" href="https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=2023038038">
+           <img class="lw_icon" src="../../assets/img/index/beiab.png" alt="蜀ICP备2023038038号-1">蜀ICP备2023038038号-1</a></div>
     </div>
   </div>
 </template>
@@ -314,6 +323,17 @@
         }
       }
     }
+  }
+  .footer_other{
+    .divider {
+      border-top: 2px solid #9b9999;
+      margin: 15px auto;
+      width: 82%;
+
+    }
+    text-align: center;
+    margin: 0 auto;
+    color: #7b7e81;
   }
 
   @media only screen and (max-width: 991px) {
