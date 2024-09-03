@@ -31,12 +31,12 @@ const scrollTop = ref(0)
 onMounted(() => {
   window.addEventListener('resize', setBannerHeight)
   setBannerHeight()
-  window.addEventListener('scroll', scrollHandle)
+  // window.addEventListener('scroll', scrollHandle)
 })
 
 onUnmounted(() => {
   window.removeEventListener('resize', setBannerHeight)
-  window.removeEventListener('scroll', scrollHandle)
+  // window.removeEventListener('scroll', scrollHandle)
 })
 
 function setBannerHeight () {

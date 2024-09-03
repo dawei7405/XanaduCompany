@@ -95,16 +95,16 @@ onBeforeMount(() => {
   justify-content: center;
   align-items: center;
 
-  :after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(51, 112, 255, .2);
-    height: 100%;
-    z-index: 666;
-  }
+  //:after {
+  //  content: "";
+  //  position: absolute;
+  //  bottom: 0;
+  //  left: 0;
+  //  right: 0;
+  //  background: rgba(51, 112, 255, .2);
+  //  height: 100%;
+  //  z-index: 666;
+  //}
 
   .element-img {
     width: 100%;
