@@ -139,7 +139,7 @@
     pagesize: number;
     selectDate: '';
   }>({
-    activeName: '1',
+    activeName: '2',
     // 当前页码
     pagenum: 1,
     // 当前每页显示多少条数据
@@ -158,12 +158,12 @@
   onBeforeMount(() => {
     newsTabs.value = [
       {
-        id: '1',
-        name: '行业动态'
-      },
-      {
         id: '2',
         name: '公司新闻'
+      },
+      {
+        id: '1',
+        name: '行业动态'
       },
       {
         id: '3',
