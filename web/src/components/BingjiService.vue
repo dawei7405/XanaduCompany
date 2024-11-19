@@ -53,13 +53,13 @@
             <p class="service-content-hxnl-title">天府云——四川省能投天府云数据产业基地</p>
             <img :src="require('../assets/img/aboutus/jd/tianfuyun.png')" class="service-content-hxnl-img"/>
             <div class="service-content-hxnl-ms" >
-              <p>IT 功率：8300KW（一期）</p>
-              <p>机柜数：216 个              </p>
-              <p>算力规模：不低于3200P（FP16）              </p>
-              <p>建设地址：简阳市天府云数智产业园              </p>
-              <p>投资金额：5-30 亿元              </p>
-              <p>建设进度：一期项目已经改造完成，正在逐步上架服务器，已投产              </p>
-              <p>建设内容：智算中心整体按照 A 级机房标准设计改造，单机柜负荷 42KW，能源效率指（PUE）控制在 1.20 以内，一期规划投运 240 台 8 卡高性能服务器及配套网络、存储、安全设备
+              <p>IT 功率：8300KW（一期）<br>
+              机柜数：216 个 <br>
+              算力规模：不低于3200P（FP16）  <br>
+              建设地址：简阳市天府云数智产业园     <br>
+              投资金额：5-30 亿元             <br>
+              建设进度：一期项目已经改造完成，正在逐步上架服务器，已投产    <br>
+              建设内容：智算中心整体按照 A 级机房标准设计改造，单机柜负荷 42KW，能源效率指（PUE）控制在 1.20 以内，一期规划投运 240 台 8 卡高性能服务器及配套网络、存储、安全设备
               </p>
             </div>
           </div>
@@ -67,13 +67,13 @@
             <p class="service-content-hxnl-title">成渝中心——川南智能运算中心</p>
             <img :src="require('../assets/img/aboutus/jd/chuannan.png')" class="service-content-hxnl-img"/>
             <div class="service-content-hxnl-ms" >
-              <p>IT 功率：20000KW</p>
-              <p>机柜数：300+个</p>
-              <p>算力规模：不低于4000P（FP16）</p>
-              <p>建设地址：内江市东兴区科创路</p>
-              <p>投资金额：3-16 亿元</p>
-              <p>建设进度：11月底完成130+个算力基础设施建设</p>
-              <p>建设内容：占地 7.36 亩，建筑面积约 14000 ㎡，新建机房 8 个，根据目前电力规划接入可部署高性能运算服务器约 2000 台</p>
+              <p> IT 功率：20000KW  <br>
+              机柜数：300+个  <br>
+              算力规模：不低于4000P（FP16）  <br>
+              建设地址：内江市东兴区科创路  <br>
+              投资金额：3-16 亿元  <br>
+              建设进度：11月底完成130+个算力基础设施建设  <br>
+              建设内容：占地 7.36 亩，建筑面积约 14000 ㎡，新建机房 8 个，根据目前电力规划接入可部署高性能运算服务器约 2000 台</p>
             </div>
           </div>
         </div>
@@ -82,26 +82,26 @@
             <p class="service-content-hxnl-title">成渝中心——川南过渡数据备份中心</p>
             <img :src="require('../assets/img/aboutus/jd/chuannanguodu.png')" class="service-content-hxnl-img"/>
             <div class="service-content-hxnl-ms" >
-              <p>IT 功率：2500KW</p>
-              <p>机柜数：67个</p>
-              <p>算力规模：1800P（FP16）</p>
-              <p>建设地址：内江市东兴区西南循环经济产业园</p>
-              <p>投资金额：1.8-5 亿元</p>
-              <p>建设进度：建成并投运</p>
-              <p>建设内容：改造 1100 ㎡老旧厂房，包含模块化机房 2 个，标准机房 1 个，其中已在运行高性能运算服务器、人工智能云计算服务器超过 500 台</p>
+              <p>IT 功率：2500KW  <br>
+              机柜数：67个  <br>
+              算力规模：1800P（FP16）  <br>
+              建设地址：内江市东兴区西南循环经济产业园  <br>
+              投资金额：1.8-5 亿元  <br>
+              建设进度：建成并投运  <br>
+              建设内容：改造 1100 ㎡老旧厂房，包含模块化机房 2 个，标准机房 1 个，其中已在运行高性能运算服务器、人工智能云计算服务器超过 500 台</p>
             </div>
           </div>
           <div class="service-content-hxnl-down-right">
             <p class="service-content-hxnl-title">天府节点——简阳智能过渡数据中心</p>
             <img :src="require('../assets/img/aboutus/jd/jianyang.png')" class="service-content-hxnl-img"/>
             <div class="service-content-hxnl-ms" >
-              <p>IT 功率：1200KW</p>
-              <p>机柜数：40 个</p>
-              <p>算力规模：1000P（FP16）</p>
-              <p>建设地址：简阳市大华国际</p>
-              <p>投资金额：3 亿元</p>
-              <p>建设进度：已建成投运</p>
-              <p>建设内容：“人工智能+财税金融”科技服务大数据平台，建设智能绿色数据中心，提供数据保护、算法培训、实验推理、性能优化等功能场景需求</p>
+              <p>IT 功率：1200KW  <br>
+              机柜数：40 个  <br>
+              算力规模：1000P（FP16）  <br>
+              建设地址：简阳市大华国际  <br>
+              投资金额：3 亿元  <br>
+              建设进度：已建成投运  <br>
+              建设内容：“人工智能+财税金融”科技服务大数据平台，建设智能绿色数据中心，提供数据保护、算法培训、实验推理、性能优化等功能场景需求</p>
             </div>
           </div>
         </div>
@@ -253,8 +253,8 @@
       },
       {
         path: '',
-        tip: '微模块搭建',
-        desc: "安装集成采用模块化供电、模块化机柜和模块化机房。响应国家节能减排要求，推动绿色节能、提高能源利用效率，促进大科学装置整体可持续发展。目前单机柜负荷可根据业务需求建设 20KW-43KW，根据客户不同型号服务器及组网线路，量身定制。"
+        tip: '资源优势',
+        desc: "在技术资源上，公司汇聚了国内 AIC(Nvidia 显卡授权生产厂商)首席工程师团队技术能力，在技术、资源、软件等领域进行深度调优开发。在客户资源上，公司凭借过硬的专业技术、快速响应需求服务、以及整体解决方案实战能力，构建了稳定客户基础。"
       },
     ]
     divBgList.value = [
@@ -376,7 +376,7 @@
       font-weight: 700;
       font-size: 32px;
       position: relative;
-      margin: 20px 0px;
+      margin: 50px 0px;
       //padding: 30px 0px;
     }
 
@@ -396,52 +396,55 @@
 
     .service-content-hxnl{
       //background-color: #e4eefc;
-      width: 92%;
+      width: 85%;
       margin: 25px auto;
       height: 1200px;
       //border: 1px solid red;
+
       .service-content-hxnl-up{
-        margin: 10px 10px;
+        margin: 40px  auto ;
         width: 100%;
-        height: 600px;
+        height: 500px;
         //border: 2px solid green;
         display: flex;
+
         .service-content-hxnl-up-left{
-          margin: 5px 5px;
-          background-color: #b5e7ce;
+          margin: 40px 40px;
+          background-color:  #e4eefc;
           width: 50%;
-          height: 600px;
+          height: 500px;
           border: 1px solid #6fe0e7;
           border-radius: 14px;
+
         }
         .service-content-hxnl-up-right{
-          margin: 5px 5px;
-          background-color: #b5e7ce;
+          margin: 40px 40px;
+          background-color:  #e4eefc;
           width: 50%;
-          height: 600px;
+          height: 500px;
           border: 1px solid #6fe0e7;
           border-radius: 14px;
         }
       }
       .service-content-hxnl-down{
         width: 100%;
-        height: 600px;
+        height: 500px;
         //border: 2px solid green;
         display: flex;
-        margin: 10px 10px;
+        margin: 80px  auto ;
         .service-content-hxnl-down-left{
-          margin: 5px 5px;
-          background-color: #b5e7ce;
+          margin: 40px 40px;
+          background-color:  #e4eefc;
           width: 50%;
-          height: 600px;
+          height: 500px;
           border: 1px solid #6fe0e7;
           border-radius: 14px;
         }
         .service-content-hxnl-down-right{
-          margin: 5px 5px;
-          background-color: #b5e7ce;
+          margin: 40px 40px;
+          background-color:  #e4eefc;
           width: 50%;
-          height: 600px;
+          height: 500px;
           border: 1px solid #6fe0e7;
           border-radius: 14px;
         }
@@ -450,8 +453,8 @@
         //background-color: #b2ecd4;
         font-size: 20px;
         text-align: center;
-        border-radius: 50px;
-        border: 1px solid #6fe0e7;
+        //border-radius: 50px;
+        //border: 1px solid #6fe0e7;
       }
 
       .service-content-hxnl-img{
@@ -475,25 +478,25 @@
     .service-content-jscx{
       //background-color: #e4eefc;
       width: 92%;
-      margin: 25px auto;
-      height: 800px;
+      margin: 2px auto;
+      height: 900px;
       //border: 1px solid red;
       .service-content-jscx-up{
-        margin: 10px 10px;
+        margin: 20px  auto ;
         width: 100%;
         height: 400px;
         //border: 2px solid green;
         display: flex;
         .service-content-jscx-up-left{
-          margin: 5px 5px;
-          background-color: #b5e7ce;
+          margin: 40px 40px;
+          background-color:  #e4eefc;
           width: 50%;
           height: 400px;
           border: 1px solid #6fe0e7;
           border-radius: 14px;
           display: flex;
           .service-content-jscx-imgs{
-            margin: 50px ;
+            margin: 30px 10px ;
             width: 50%;  /* 设置你的图片宽度 */
             height: auto; /* 设置你的图片高度 */
             border-radius: 50%; /* 将div变成圆形 */
@@ -513,6 +516,8 @@
             .service-content-jscx-ms-title{
               margin-top:50px ;
               font-size: 21px;
+              border-radius: 50px;
+              border: 1px solid #6fe0e7;
             }
             .service-content-jscx-ms-content{
               text-align: left;
@@ -521,15 +526,15 @@
           }
         }
         .service-content-jscx-up-right{
-          margin: 5px 5px;
-          background-color: #b5e7ce;
+          margin: 40px 40px;
+          background-color:  #e4eefc;
           width: 50%;
           height: 400px;
           border: 1px solid #6fe0e7;
           border-radius: 14px;
           display: flex;
           .service-content-jscx-imgs{
-            margin: 50px ;
+            margin: 30px 10px ;
             width: 50%;  /* 设置你的图片宽度 */
             height: auto; /* 设置你的图片高度 */
             border-radius: 50%; /* 将div变成圆形 */
@@ -549,6 +554,8 @@
             .service-content-jscx-ms-title{
               margin-top:50px ;
               font-size: 21px;
+              border-radius: 50px;
+              border: 1px solid #6fe0e7;
             }
             .service-content-jscx-ms-content{
               text-align: left;
