@@ -5,15 +5,22 @@
             <p>关于并济</p>
           </div>
           <div class="service-item-1-centent">
-            <p class="service-info-subtitle"> 四川并济科技有限公司成立于2020年07月，注册资本为 10000
-              万元人民币，系四川弘智远大控股子公司及内江市东兴区招商引资企业，已被认定为国家高新技术企业、四川省专精特新中小企业、内江市企业技术中心等，公司致力于人工智能算力中心建设及服务，多类型业务应用兼顾。</p>
             <p class="service-info-subtitle">
-              四川并济科技有限公司自2020年起专注于AI算力服务，拥有国内最大的商业化A100私有云算力服务体系，并涵盖A100、A800、H800多品类的算力服务，为下游客户提供高效智能算力服务。2023年11月21日，并济科技现有股东与NVIDIA
-              Elite Partner(英伟达精英级合作伙伴）上海信弘智能科技有限公司签署增资扩股协议，获得过亿元战略投资。</p>
+              并济科技，成立于2020年7月1日，系四川弘智远大控股子公司及东兴区招商引资企业。作为西南地区成立最早、规模最大的人工智能算力服务商，我们拥有国家高新技术企业、四川省专精特新中小企业和内江市企业技术中心等多项资质认证。
+            </p>
             <p class="service-info-subtitle">
-              公司已通过相关行业的权威认证，专注产品的自主研发，已获多项专利证书，资质卓越。公司拥有过渡数据中心和智能超算中心，建设规模宏大，服务能力强，公司还会继续不断扩大自身知识产权储备，在人工智能、区块链、云计算、大数据领域内不断更新换代，致力于通过技术创新、数据赋能和应用场景的深度融合，为政府、企业、市民以及地方产业等提供高效、节约、品质的综合服务平台。</p>
-          </div>
+              并济科技业务涵盖高性能智算设备生产与销售、高性能算力运营和算力调度服务、生成式人工智能模型训练服务以及应用研发服务等多个领域。已建成并运营规模不低于10000P（FP16）的高性能智算中心，为来自国家头部科研团队、互联网头部企业以及头部科技企业等提供大模型训练服务，积累了丰富的千卡以上集群的长时间训练经验和案例。
+            </p>
+            <p class="service-info-subtitle">
+              我们的核心竞争力在于卓越的算力设备，形成了国内体系最完整的NVIDIA高性能算力卡系列产品。并与运营商建立了战略合作伙伴关系，能为各领域客户提供大模型需要的带宽。在技术创新方面，我们拥有国内领先的跨代算力集群构建能力、长时训练精细维护能力、能耗优化调度控制能力，帮助客户充分利用跨代购置的算力提升大模型训练的效能并降低算力服务的能耗。
+            </p>
+            <p class="service-info-subtitle">
+              并济科技的创始人王晓丹先生，凭借十余年人工智能信息化建设及运营经验，带领公司在人工智能领域取得了显著成就。2023年11月21日，我们获得了上海信弘智能科技有限公司的战略投资1.4亿元，该公司作为NVIDIA Elite Partner（精英级合作伙伴），为我们提供了强大的技术支持和资源。
+            </p>
+            </div>
     </div>
+
+
     <div class=" service-item-2">
       <div class="service-content-mg">
       </div>
@@ -26,9 +33,124 @@
       </div>
       <div class="service-content-mgs">
         <div class="div-itemf">
-          <div class="div-item" v-for="(item, index) in divBgList" :key="index">
+          <div class="div-item" v-for="(item, index) in divYsList" :key="index">
             <div class="div-item-tip"><p>{{ item.tip }}</p></div>
             <div class="div-item-desc"><p>{{ item.desc }}</p></div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="service-item-2-title">
+        核心能力
+      </div>
+<!--      <div class="service-item-2-centent">-->
+<!--        公司自 2020 年起专注于 AI 算力服务，拥有国内最大的商业化私有云算力服务体系，并涵盖 A 系列、H 系列多品类的算力服务，为下游客户提供高效智能算力。-->
+<!--      </div>-->
+      <div class="service-content-hxnl">
+        <div class="service-content-hxnl-up">
+          <div class="service-content-hxnl-up-left">
+            <p class="service-content-hxnl-title">天府云——四川省能投天府云数据产业基地</p>
+            <img :src="require('../assets/img/aboutus/jd/tianfuyun.png')" class="service-content-hxnl-img"/>
+            <div class="service-content-hxnl-ms" >
+              <p>IT 功率：8300KW（一期）</p>
+              <p>机柜数：216 个              </p>
+              <p>算力规模：不低于3200P（FP16）              </p>
+              <p>建设地址：简阳市天府云数智产业园              </p>
+              <p>投资金额：5-30 亿元              </p>
+              <p>建设进度：一期项目已经改造完成，正在逐步上架服务器，已投产              </p>
+              <p>建设内容：智算中心整体按照 A 级机房标准设计改造，单机柜负荷 42KW，能源效率指（PUE）控制在 1.20 以内，一期规划投运 240 台 8 卡高性能服务器及配套网络、存储、安全设备
+              </p>
+            </div>
+          </div>
+          <div class="service-content-hxnl-up-right">
+            <p class="service-content-hxnl-title">成渝中心——川南智能运算中心</p>
+            <img :src="require('../assets/img/aboutus/jd/chuannan.png')" class="service-content-hxnl-img"/>
+            <div class="service-content-hxnl-ms" >
+              <p>IT 功率：20000KW</p>
+              <p>机柜数：300+个</p>
+              <p>算力规模：不低于4000P（FP16）</p>
+              <p>建设地址：内江市东兴区科创路</p>
+              <p>投资金额：3-16 亿元</p>
+              <p>建设进度：11月底完成130+个算力基础设施建设</p>
+              <p>建设内容：占地 7.36 亩，建筑面积约 14000 ㎡，新建机房 8 个，根据目前电力规划接入可部署高性能运算服务器约 2000 台</p>
+            </div>
+          </div>
+        </div>
+        <div class="service-content-hxnl-down">
+          <div class="service-content-hxnl-down-left">
+            <p class="service-content-hxnl-title">成渝中心——川南过渡数据备份中心</p>
+            <img :src="require('../assets/img/aboutus/jd/chuannanguodu.png')" class="service-content-hxnl-img"/>
+            <div class="service-content-hxnl-ms" >
+              <p>IT 功率：2500KW</p>
+              <p>机柜数：67个</p>
+              <p>算力规模：1800P（FP16）</p>
+              <p>建设地址：内江市东兴区西南循环经济产业园</p>
+              <p>投资金额：1.8-5 亿元</p>
+              <p>建设进度：建成并投运</p>
+              <p>建设内容：改造 1100 ㎡老旧厂房，包含模块化机房 2 个，标准机房 1 个，其中已在运行高性能运算服务器、人工智能云计算服务器超过 500 台</p>
+            </div>
+          </div>
+          <div class="service-content-hxnl-down-right">
+            <p class="service-content-hxnl-title">天府节点——简阳智能过渡数据中心</p>
+            <img :src="require('../assets/img/aboutus/jd/jianyang.png')" class="service-content-hxnl-img"/>
+            <div class="service-content-hxnl-ms" >
+              <p>IT 功率：1200KW</p>
+              <p>机柜数：40 个</p>
+              <p>算力规模：1000P（FP16）</p>
+              <p>建设地址：简阳市大华国际</p>
+              <p>投资金额：3 亿元</p>
+              <p>建设进度：已建成投运</p>
+              <p>建设内容：“人工智能+财税金融”科技服务大数据平台，建设智能绿色数据中心，提供数据保护、算法培训、实验推理、性能优化等功能场景需求</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="service-item-2-title">
+        技术创新
+      </div>
+
+      <div class="service-content-jscx">
+        <div class="service-content-jscx-up">
+          <div class="service-content-jscx-up-left">
+            <div class="service-content-jscx-imgs">
+              <img :src="require('../assets/img/aboutus/js/js1.png')" class="service-content-jscx-img"/>
+            </div>
+            <div class="service-content-jscx-ms" >
+             <p class="service-content-jscx-ms-title" >微模块搭建</p>
+             <p class="service-content-jscx-ms-content">安装集成采用模块化供电、模块化机柜和模块化机房。响应国家节能减排要求，推动绿色节能、提高能源利用效率，促进大科学装置整体可持续发展。目前单机柜负荷可根据业务需求建设 20KW-43KW，根据客户不同型号服务器及组网线路，量身定制。</p>
+            </div>
+          </div>
+          <div class="service-content-jscx-up-right">
+            <div class="service-content-jscx-imgs">
+              <img :src="require('../assets/img/aboutus//js/js2.png')" class="service-content-jscx-img"/>
+            </div>
+            <div class="service-content-jscx-ms" >
+              <p class="service-content-jscx-ms-title" >制冷系统</p>
+              <p class="service-content-jscx-ms-content">机房整体采用风冷或水冷散热大模型的技术路线，建设室外冷却塔，并铺设相关水冷管道。机房湿度控制系统由精密空调末端控制，对机房湿度进行调节，精密空调自带监测功能，可检测自身工作状态。后续将进一步采用液冷散热大模型，PUE 值低至 1.15以下。</p>
+            </div>
+          </div>
+        </div>
+        <div class="service-content-jscx-up">
+          <div class="service-content-jscx-up-left">
+            <div class="service-content-jscx-imgs">
+              <img :src="require('../assets/img/aboutus/js/js3.png')" class="service-content-jscx-img"/>
+            </div>
+            <div class="service-content-jscx-ms" >
+              <p class="service-content-jscx-ms-title" >节能软件</p>
+              <p class="service-content-jscx-ms-content">集团公司总计 130 余项自主知识产权，所有项目均采用智能网关管理系统，通过虚拟化技术和自动化技术，实现硬件资源和软件资源统一管理、统一分配、统一部署、统一监控和统一备份回收资源。</p>
+            </div>
+          </div>
+          <div class="service-content-jscx-up-right">
+            <div class="service-content-jscx-imgs">
+              <img :src="require('../assets/img/aboutus/js/js4.png')" class="service-content-jscx-img"/>
+            </div>
+            <div class="service-content-jscx-ms" >
+              <p class="service-content-jscx-ms-title" >合作优势</p>
+              <p class="service-content-jscx-ms-content">公司与国内知名高校成立联合实验室，将获得国内人工智能领域的全面技术支持，它将成为人工智能领域前沿研究和创新标杆，旨在通过协同研究、培训和实践应用，推动人工智能领域的创新和卓越，以市场需求导向大力突破关键数字核心技术。</p>
+            </div>
           </div>
         </div>
       </div>
@@ -87,8 +209,8 @@
 
   }
 
-
   const divBgList = ref<divItem[]>([])
+  const divYsList = ref<divItem[]>([])
 
   const ryzsList = ref<ryzsItem[]>([])
 
@@ -99,9 +221,9 @@
     ideaDesc: '通过提供灵活、高性能的计算资源，解放了创新力，推动了科技的不断前进。它为用户提供了低成本、高效的解决方案，无论是企业还是个人，都能够受益于这种共享计算资源的模式。随着算力服务平台的发展，可以预见科技创新将迎来更广阔的发展空间，为未来的科技进步和社会发展贡献更多的动力。'
   })
   const serviceIdeaImg = ref<ImgItem[]>([])
-  const caseList = ref<CaseItem[]>([])
   const percentage = ref('50')
   onBeforeMount(() => {
+
     ryzsList.value = [
       {
         path: require('../assets/img/aboutus/ry/gjjkjxzxqy.jpg'),
@@ -118,25 +240,40 @@
         desc: '四川省专精特新中小企业证书'
       }
     ]
-    divBgList.value = [
+    divYsList.value= [
       {
-        path: require('../assets/img/aboutus/bg1.jpg'),
-        tip: '产品优势',
-        desc: "并济算力中心的核心竞争力源于其卓越的算力设备，其中NVIDIA 显卡占据主导地位。这些显卡中绝大多数为针对大规模训练场景而量身打造的 A100 类算力显卡，使其在市场竞争中独具优势，尽显卓越性能。"
-      }, {
-        path: require('../assets/img/aboutus/bg2.jpg'),
-        tip: "技术优势",
-        desc: "并济业务突破地打通上下游供应链，对标常规数据中心建设，体系完善。在建设成本上，公司可节省资金约20%以上。对标未调优产品，并济科技定制技术方案，算力性能可提升40%-60%。"
-      }, {
-        path: require('../assets/img/aboutus/bg3.jpg'),
-        tip: "渠道优势",
-        desc: "先发经验优势：秉持着开拓创新的精神，公司携手航天云网、云丛科技、电子科技大学等客户，合作进行算力服务，积累了大量的大模型智能运算经验及案例。\n" +
-          "深度定制调优：在相关运算应用过程中，公司汇聚了国内AIC(Nvidia显卡授权生产厂商)首席工程师团队技术能力，在技术、资源、软件等领域进行深度调优开发。"
+        path: '',
+        tip: '设备优势',
+        desc: "并济算力中心的核心竞争力源于公司卓越的算力设备，其中NVIDIA高性能算力卡系列产品占主导地位。这使得公司在服务品类和算力性能上具备双重市场优势。此外，通过与运营商建立的战略合作伙伴关系，我们能够为各领域客户提供所需的大模型带宽支持，进一步巩固了公司在高性能计算领域的领先地位。"
       },
       {
-        path: require('../assets/img/aboutus/bg4.jpg'),
-        tip: "客户优势",
-        desc: "在科技业务中，并济凭借过硬的专业技术，能够快速满足多类客户需求，定制专业的解决方案，构建了稳定的客户基础。"
+        path: '',
+        tip: '技术优势',
+        desc: "并济凭借其完整的NVIDIA先进算力供应链，在建设成本上为客户节约高达20%的资金。公司在大规模数据训练领域积累了丰富经验，能够显著提升未调优大模型的算力性能40%-60%。此外，通过创新的跨代算力异构集群构建能力，我们有效提高了综合算力效能，并优化了能耗，帮助用户实现超过20%的节能效果。"
+      },
+      {
+        path: '',
+        tip: '微模块搭建',
+        desc: "安装集成采用模块化供电、模块化机柜和模块化机房。响应国家节能减排要求，推动绿色节能、提高能源利用效率，促进大科学装置整体可持续发展。目前单机柜负荷可根据业务需求建设 20KW-43KW，根据客户不同型号服务器及组网线路，量身定制。"
+      },
+    ]
+    divBgList.value = [
+      {
+        path: '',
+        tip: '微模块搭建',
+        desc: "安装集成采用模块化供电、模块化机柜和模块化机房。响应国家节能减排要求，推动绿色节能、提高能源利用效率，促进大科学装置整体可持续发展。目前单机柜负荷可根据业务需求建设 20KW-43KW，根据客户不同型号服务器及组网线路，量身定制。"
+      }, {
+        path: '',
+        tip: "制冷系统",
+        desc: "机房整体采用风冷或水冷散热大模型的技术路线，建设室外冷却塔，并铺设相关水冷管道。机房湿度控制系统由精密空调末端控制，对机房湿度进行调节，精密空调自带监测功能，可检测自身工作状态。后续将进一步采用液冷散热大模型，PUE 值低至 1.15 以下。"
+      }, {
+        path: '',
+        tip: "节能软件",
+        desc: "集团公司总计 130 余项自主知识产权，所有项目均采用智能网关管理系统，通过虚拟化技术和自动化技术，实现硬件资源和软件资源统一管理、统一分配、统一部署、统一监控和统一备份回收资源。"
+      }, {
+        path: '',
+        tip: "合作优势",
+        desc: "公司与国内知名高校成立联合实验室，将获得国内人工智能领域的全面技术支持，它将成为人工智能领域前沿研究和创新标杆，旨在通过协同研究、培训和实践应用，推动人工智能领域的创新和卓越，以市场需求导向大力突破关键数字核心技术。"
       }
     ]
     serviceList.value = [
@@ -167,24 +304,7 @@
         path: require('../assets/img/index/service2.png')
       }
     ]
-    caseList.value = [
-      {
-        desc: '私家智能定制APP',
-        path: require('../assets/img/index/app1.jpg')
-      },
-      {
-        desc: '公司业绩统计管理系统',
-        path: require('../assets/img/index/system1.jpg')
-      },
-      {
-        desc: '私家智能定制APP',
-        path: require('../assets/img/index/app1.jpg')
-      },
-      {
-        desc: '公司业绩统计管理系统',
-        path: require('../assets/img/index/system2.jpg')
-      }
-    ]
+
   })
 </script>
 <style lang="less" scoped>
@@ -214,13 +334,13 @@
     }
     .service-item-1-centent{
       border-radius: 40px;
-      background-color: #d2efe1;
+      background-color: #e4eefc;
       padding: 20px 0px;
       font-size: 16px;
       line-height: 1.5;
       margin-top: 30px;
-      margin-left: 100px;
-      margin-right: 100px;
+      margin-left: 50px;
+      margin-right: 50px;
       text-align: left !important;
       text-indent: 2em;
       padding-left: 2em;
@@ -262,7 +382,7 @@
 
     .service-item-2-centent {
       border-radius: 40px;
-      background-color: #d2efe1;
+      background-color: #e4eefc;
       padding: 20px 4px;
       font-size: 16px;
       line-height: 1.5;
@@ -274,6 +394,199 @@
       padding-left: 2em
     }
 
+    .service-content-hxnl{
+      //background-color: #e4eefc;
+      width: 92%;
+      margin: 25px auto;
+      height: 1200px;
+      //border: 1px solid red;
+      .service-content-hxnl-up{
+        margin: 10px 10px;
+        width: 100%;
+        height: 600px;
+        //border: 2px solid green;
+        display: flex;
+        .service-content-hxnl-up-left{
+          margin: 5px 5px;
+          background-color: #b5e7ce;
+          width: 50%;
+          height: 600px;
+          border: 1px solid #6fe0e7;
+          border-radius: 14px;
+        }
+        .service-content-hxnl-up-right{
+          margin: 5px 5px;
+          background-color: #b5e7ce;
+          width: 50%;
+          height: 600px;
+          border: 1px solid #6fe0e7;
+          border-radius: 14px;
+        }
+      }
+      .service-content-hxnl-down{
+        width: 100%;
+        height: 600px;
+        //border: 2px solid green;
+        display: flex;
+        margin: 10px 10px;
+        .service-content-hxnl-down-left{
+          margin: 5px 5px;
+          background-color: #b5e7ce;
+          width: 50%;
+          height: 600px;
+          border: 1px solid #6fe0e7;
+          border-radius: 14px;
+        }
+        .service-content-hxnl-down-right{
+          margin: 5px 5px;
+          background-color: #b5e7ce;
+          width: 50%;
+          height: 600px;
+          border: 1px solid #6fe0e7;
+          border-radius: 14px;
+        }
+      }
+      .service-content-hxnl-title{
+        //background-color: #b2ecd4;
+        font-size: 20px;
+        text-align: center;
+        border-radius: 50px;
+        border: 1px solid #6fe0e7;
+      }
+
+      .service-content-hxnl-img{
+        width: 35%;
+        height: 35%;
+        padding-right: 0px;
+        border-radius: 50%; /* 将div变成圆形 */
+        overflow: hidden; /* 隐藏超出部分 */
+      }
+      .service-content-hxnl-ms{
+        //background-color: #a5dde0;
+        text-align: left;
+        margin-left: 20px;
+        margin-right: 20px;
+        border-radius:  4px;
+      }
+    }
+
+
+
+    .service-content-jscx{
+      //background-color: #e4eefc;
+      width: 92%;
+      margin: 25px auto;
+      height: 800px;
+      //border: 1px solid red;
+      .service-content-jscx-up{
+        margin: 10px 10px;
+        width: 100%;
+        height: 400px;
+        //border: 2px solid green;
+        display: flex;
+        .service-content-jscx-up-left{
+          margin: 5px 5px;
+          background-color: #b5e7ce;
+          width: 50%;
+          height: 400px;
+          border: 1px solid #6fe0e7;
+          border-radius: 14px;
+          display: flex;
+          .service-content-jscx-imgs{
+            margin: 50px ;
+            width: 50%;  /* 设置你的图片宽度 */
+            height: auto; /* 设置你的图片高度 */
+            border-radius: 50%; /* 将div变成圆形 */
+            overflow: hidden; /* 隐藏超出部分 */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .service-content-jscx-img{
+              width: 100%;
+              height: 100%;
+              padding-right: 0px;
+            }
+          }
+          .service-content-jscx-ms{
+            width: 50%;
+            height: 100%;
+            .service-content-jscx-ms-title{
+              margin-top:50px ;
+              font-size: 21px;
+            }
+            .service-content-jscx-ms-content{
+              text-align: left;
+              margin: 30px 20px 30px 5px
+            }
+          }
+        }
+        .service-content-jscx-up-right{
+          margin: 5px 5px;
+          background-color: #b5e7ce;
+          width: 50%;
+          height: 400px;
+          border: 1px solid #6fe0e7;
+          border-radius: 14px;
+          display: flex;
+          .service-content-jscx-imgs{
+            margin: 50px ;
+            width: 50%;  /* 设置你的图片宽度 */
+            height: auto; /* 设置你的图片高度 */
+            border-radius: 50%; /* 将div变成圆形 */
+            overflow: hidden; /* 隐藏超出部分 */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .service-content-jscx-img{
+              width: 100%;
+              height: 100%;
+              padding-right: 0px;
+            }
+          }
+          .service-content-jscx-ms{
+            width: 50%;
+            height: 100%;
+            .service-content-jscx-ms-title{
+              margin-top:50px ;
+              font-size: 21px;
+            }
+            .service-content-jscx-ms-content{
+              text-align: left;
+              margin: 30px 20px 30px 5px
+            }
+          }
+        }
+      }
+      .service-content-jscx-down{
+        width: 100%;
+        height: 400px;
+        //border: 2px solid green;
+        display: flex;
+        .service-content-jscx-down-left{
+          background-color: #e4eefc;
+          width: 50%;
+          height: 400px;
+          border: 1px solid #6fe0e7;
+          border-radius: 14px;
+        }
+        .service-content-jscx-down-right{
+          background-color: #e4eefc;
+          width: 50%;
+          height: 400px;
+          border: 1px solid #6fe0e7;
+          border-radius: 14px;
+        }
+      }
+      .service-content-jscx-title{
+        //background-color: #b2ecd4;
+        font-size: 20px;
+        text-align: center;
+        border-radius: 50px;
+        border: 1px solid #6fe0e7;
+      }
+
+
+    }
 
     .service-content-mgs {
       width: 92%;
@@ -292,7 +605,7 @@
           display: flex;
           justify-content: flex-start;
           overflow: hidden;
-          background: #b1c6e7;
+          background: #e4eefc;
           border-radius: 15px;
           flex-direction: column;
 
@@ -386,7 +699,7 @@
         margin-top: 10px;
       }
 
-      /deep/ .el-progress-bar__outer {
+      :deep .el-progress-bar__outer {
         height: 2px !important;
       }
 

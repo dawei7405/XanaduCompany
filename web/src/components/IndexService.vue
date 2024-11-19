@@ -13,8 +13,10 @@
               <div class="service-title-shadow ">
                 <img :src="item.path" alt="">
               </div>
+              <div class="div-item-desc"><p>{{ item.title }}</p></div>
+<!--              <div  class="div-item-dc">{{ item.description }}</div>-->
             </div>
-            <p class="service-name">{{ item.description }}</p>
+
           </div>
         </div>
       </div>
@@ -90,6 +92,7 @@
 
   interface ServiceItem extends BaseItem {
     description: string;
+    title: string;
   }
 
   interface ImgItem extends BaseItem {
@@ -144,30 +147,32 @@
     ]
     serviceList.value = [
       {
-        description: '算力服务',
+        title: 'GPU算力服务',
+        description: '搭建人工智能运算集群、GPU公有云平台、GPU私有云平台，提供人工智能等领域模型训练、AIGC和推理服务。',
         path: require('../assets/img/index/bigData.webp')
       },
       {
-        description: '云服务器',
-        path: require('../assets/img/index/media.webp')
+        title: '智算中心建设及运维',
+        description: '打通上下游软硬件供应链，建设体系完善。在数字底座建设成本上可节省资金约20%以上，对标传统数据中心，并济科技定制硬件+IB组网+软件调度方案，算力性能提高20%-50%，单位面积算力规模可提升40%-60%。',
+        path: require('../assets/img/index/media.webp'),
+
       },
       {
-        description: '互联网',
-        path: require('../assets/img/index/internet.webp')
+        title: '数字化智能化改造',
+        description: '以提升核心竞争力为目标，融合人工智能、大数据等数字技术，推进传统产业过程智能化，培育新型生产方式，全面提升企业研发、生产、管理和服务的智能化水平，可根据客户需求定制化企业转型方案。',
+        path: require('../assets/img/index/internet.webp'),
+
       },
-      {
-        description: '云计算',
-        path: require('../assets/img/index/cloud.webp')
-      }
+
     ]
     serviceIdeaImg.value = [
       {
         name: 'lefImg',
-        path: require('../assets/img/index/service1.png')
+        path: require('../assets/img/index/aigc1.png')
       },
       {
         name: 'rightImg',
-        path: require('../assets/img/index/service2.png')
+        path: require('../assets/img/index/aigc2.png')
       }
     ]
     caseList.value = [
@@ -279,10 +284,11 @@
 
     .idea-left img {
       width: 600px;
+      height: 100%;
     }
 
     .idea-right {
-      height: 500px;
+      height: 600px;
       width: calc(100% - 600px);
       margin-left: 50px;
       padding-top: 30px;
@@ -479,6 +485,7 @@
       }
 
     }
+
     .service-idea3 {
 
     }
