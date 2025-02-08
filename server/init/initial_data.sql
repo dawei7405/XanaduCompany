@@ -99,7 +99,7 @@ CREATE TABLE `aw_jobs`  (
   `create_time` datetime(0) NOT NULL,
   `update_time` datetime(0) NOT NULL,
   `job_category` int(11) NULL DEFAULT NULL,
-  `description` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT '职位描述',
+  `description` text CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT '职位描述',
   `requirement` text CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT '职位要求',
   `title` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT '职位名称',
   `city` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,

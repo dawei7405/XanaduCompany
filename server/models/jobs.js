@@ -14,7 +14,7 @@ const Job = sequelize.define(
         comment: '职位名称'
       },
       description: {
-        type: DataTypes.STRING,
+        type: DataTypes.TEXT,
         allowNull: false,
         comment: '职位描述'
       },
