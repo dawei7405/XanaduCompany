@@ -38,9 +38,10 @@
           />
         </div>
         <div class = "update-time">
-          <span>最近更新时间：</span>&nbsp;&nbsp;<span>{{ jobDetail.update_time }}</span>
+<!--          <span>最近更新时间：</span>&nbsp;&nbsp;<span>{{ jobDetail.update_time }}</span>-->
+          <h2 style="color: #7bd7a4"> 简历投递邮箱：964366781@qq.com</h2>&nbsp;
         </div>
-        <el-button round type = "primary" style="width: 150px"><a href = "master@scmerge.com">投递</a></el-button>
+<!--        <el-button round type = "primary" style="width: 150px"><a href = "master@scmerge.com">投递</a></el-button>-->
       </div>
     </div>
     <AwFooter></AwFooter>
